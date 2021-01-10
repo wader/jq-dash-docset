@@ -29,8 +29,6 @@ COMMIT=$COMMIT jq -n '
     }
 }' > "$DIR/contrib/docset.json"
 
-pwd
-
 gm convert \
     public/jq.png \
     -thumbnail '16x16>' \
