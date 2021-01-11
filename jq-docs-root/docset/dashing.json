@@ -3,12 +3,44 @@
     "package": "jq",
     "index": "jq.html",
     "selectors": {
-        "#Builtinoperatorsandfunctions h3 > code, #Math p > code, #IO p > code": {
-            "type": "Function",
-            "requiretext": "^(\\w+|\\w+\\(.+\\))$"
+        "section > h2": "Section",
+        "#Advancedfeatures > section > h3": {
+            "type": "Section"
         },
-        "section > h2": "Section"
+        "#Basicfilters > section > h3 > code": {
+            "type": "Expression"
+        },
+        "#TypesandValues > section > h3 > code": {
+            "type": "Expression"
+        },
+        "#Builtinoperatorsandfunctions h3 > code": {
+            "type": "Function"
+        },
+        "#ConditionalsandComparisons > section > h3 > code": {
+            "type": "Expression"
+        },
+        "#RegularexpressionsPCRE > section > h3 > code": {
+            "type": "Function"
+        },
+        "#Advancedfeatures > section > h3 > code": {
+            "type": "Function",
+            "requiretext": "^\\w+"
+        },
+        "#Math p > code": {
+            "type": "Function"
+        },
+        "#IO p > code": {
+            "type": "Function",
+            "requiretext": "^\\w+"
+        },
+        "#Assignment > section > h3 > code": {
+            "type": "Expression"
+        },
+        "#Modules > section > h3 > code": {
+            "type": "Directive"
+        }
     },
+    "ignore": ["sin()", "pow()"],
     "icon32x32": "",
     "allowJS": false,
     "ExternalURL": ""

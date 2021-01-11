@@ -1,0 +1,29 @@
+/* undo bootstrap zero margin by default */
+body {
+    margin: 8px;
+}
+
+/* manual.liquid ******************************************/
+section {
+    padding-top: 24px;
+}
+
+h3 code {
+    border: 0;
+    font-size: 20px;
+}
+
+.manual-example table {
+    border-top: 1px solid #E5E5E5;
+}
+.manual-example table td {
+    white-space: pre-wrap;
+    font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+}
+.manual-example table td.jqprogram {
+    font-weight: bold;
+}
+.manual-example table th {
+    text-align: right;
+    padding-right: 10px;
+}

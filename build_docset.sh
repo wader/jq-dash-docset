@@ -6,7 +6,6 @@ mkdir "$DIR/contrib"
 
 git clone https://github.com/stedolan/jq /tmp/jq-src
 cp -a jq-docs-root/* /tmp/jq-src/docs
-COMMIT=$(cd /tmp/jq-src && git rev-parse --short HEAD)
 cd /tmp/jq-src/docs
 
 pipenv install
@@ -16,12 +15,13 @@ cd output
 dashing build
 cp -a jq.docset "$DIR"
 tar --exclude='.DS_Store' -cvzf "$DIR/contrib/jq.tgz" jq.docset
+JQ_TGZ_MD5SUM=$(md5sum "$DIR/contrib/jq.tgz" | sed -E 's/^(\w+).*/\1/')
 cd ..
 
-COMMIT=$COMMIT jq -n '
+JQ_TGZ_MD5SUM=$JQ_TGZ_MD5SUM jq -n '
 {
     "name": "jq",
-    "version": "dev/\(env.COMMIT)",
+    "version": "dev/\(env.JQ_TGZ_MD5SUM)",
     "archive": "jq.tgz",
     "author": {
         "name": "Mattias Wadman",
