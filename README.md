@@ -4,9 +4,11 @@
 
 # Install docset in dash
 
-Download or clone this repo. In dash under "Docsets" preferences tab
-press "+", select "Add Local Docset" and browse to where you downloaded
-and select "jq.docset".
+Search for "jq" under "User Contributed Docsets" in dash.
+
+Alternatively download or clone this repo and in dash under "Docsets"
+preferences tab press "+", select "Add Local Docset" and browse to where
+you downloaded and select "jq.docset".
 
 # Build docset yourself
 
