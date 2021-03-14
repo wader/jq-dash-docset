@@ -3,27 +3,45 @@
     "package": "jq",
     "index": "jq.html",
     "selectors": {
-        "section > h2": "Section",
-        "#Advancedfeatures > section > h3": {"type": "Section"},
-        "#Basicfilters > section > h3 > code": {"type": "Expression"},
-        "#TypesandValues > section > h3 > code": {"type": "Expression"},
-        "#Builtinoperatorsandfunctions h3 > code": {"type": "Function"},
-        "#ConditionalsandComparisons > section > h3 > code": {"type": "Expression"},
-        "#ConditionalsandComparisons > section#if-then-else > h3": {"type": "Function" },
-        "#ConditionalsandComparisons > section#and\\/or\\/not > h3": {"type": "Function" },
-        "#ConditionalsandComparisons > section#try-catch > h3": {"type": "Function" },
-        "#RegularexpressionsPCRE > section > h3 > code": {"type": "Function"},
-        "#Advancedfeatures > section > h3 > code": {
-            "type": "Function",
-            "requiretext": "^\\w+"
-        },
-        "#Math p > code": {"type": "Function"},
-        "#IO p > code": {
-            "type": "Function",
-            "requiretext": "^\\w+"
-        },
-        "#Assignment > section > h3 > code": {"type": "Expression"},
-        "#Modules > section > h3 > code": {"type": "Directive"}
+        "section > h2": {"type": "Section", "requiretext": "^[A-Z]"},
+        "section > h3": {"type": "Section", "requiretext": "^\\w"},
+
+        "#Invoking > section > h3 code": {"type": "Expression", "requiretext": "^[^a-z]"},
+        "#Basicfilters > section > h3 code": {"type": "Expression", "requiretext": "^[^a-z]"},
+        "#TypesandValues > section > h3 code": {"type": "Expression", "requiretext": "^[^a-z]"},
+
+        "#Builtinoperatorsandfunctions > section > h3 code": {"type": "Expression", "requiretext": "^[^a-z]"},
+        "#Builtinoperatorsandfunctions > section > ul code": {"type": "Expression", "requiretext": "^[^a-z]"},
+
+        "#ConditionalsandComparisons > section > h3 code": {"type": "Expression", "requiretext": "^[^a-z]"},
+        "#RegularexpressionsPCRE > section > h3 code": {"type": "Expression", "requiretext": "^[^a-z]"},
+        "#Advancedfeatures > section > h3 code": {"type": "Expression", "requiretext": "^[^a-z]"},
+        "#Math > section > h3 code": {"type": "Expression", "requiretext": "^[^a-z]"},
+        "#IO > section > h3 code": {"type": "Expression", "requiretext": "^[^a-z]"},
+        "#Streaming > section > h3 code": {"type": "Expression", "requiretext": "^[^a-z]"},
+        "#Assignment > section > h3 code": {"type": "Expression", "requiretext": "^[^a-z]"},
+
+        "#Invoking > section > h3 code ": {"type": "Function", "requiretext": "^[a-z]\\w+"},
+        "#Basicfilters > section > h3 code ": {"type": "Function", "requiretext": "^[a-z]\\w+"},
+        "#TypesandValues > section > h3 code ": {"type": "Function", "requiretext": "^[a-z]\\w+"},
+
+        "#Builtinoperatorsandfunctions section > h3 code ": {"type": "Function", "requiretext": "^[a-z]\\w+"},
+        "#Builtinoperatorsandfunctions section > ul code ": {"type": "Function", "requiretext": "^[a-z]\\w+"},
+        "#Builtinoperatorsandfunctions section > p code ": {"type": "Function", "requiretext": "^[a-z]\\w+"},
+
+        "#ConditionalsandComparisons > section > h3 code ": {"type": "Function", "requiretext": "^[a-z]\\w+"},
+        "#RegularexpressionsPCRE > section > h3 code ": {"type": "Function", "requiretext": "^[a-z]\\w+"},
+        "#Advancedfeatures > section > h3 code ": {"type": "Function", "requiretext": "^[a-z]\\w+"},
+        "#Math > section > h3 code ": {"type": "Function", "requiretext": "^[a-z]\\w+"},
+        "#Math p code ": {"type": "Function", "requiretext": "^[a-z]\\w+"},
+
+        "#IO > section > h3 code ": {"type": "Function", "requiretext": "^[a-z]\\w+"},
+        "#IO > p code ": {"type": "Function", "requiretext": "^[a-z]\\w+"},
+
+        "#Streaming > section > h3 code ": {"type": "Function", "requiretext": "^[a-z]\\w+"},
+        "#Assignment > section > h3 code ": {"type": "Function", "requiretext": "^[a-z]\\w+"},
+
+        "#Modules > section > h3 code": {"type": "Directive", "requiretext": "^\\w+"}
     },
     "ignore": ["sin()", "pow()"],
     "icon32x32": "",
