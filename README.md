@@ -10,6 +10,10 @@ Alternatively download or clone this repo and in dash under "Docsets"
 preferences tab press "+", select "Add Local Docset" and browse to where
 you downloaded and select "jq.docset".
 
+# Install docset in zeal
+
+Go to https://zealusercontributions.now.sh/ and search for jq.
+
 # Build docset yourself
 
 ```sh
