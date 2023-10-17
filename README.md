@@ -8,7 +8,7 @@ Search for "jq" under "User Contributed Docsets" in dash.
 
 Alternatively download or clone this repo and in dash under "Docsets"
 preferences tab press "+", select "Add Local Docset" and browse to where
-you downloaded and select "jq.docset".
+you downloaded and select the pre-built "jq.docset".
 
 # Install docset in zeal
 
