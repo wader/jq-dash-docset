@@ -1,6 +1,6 @@
 # jq-dash-docset
 
-[jq](https://stedolan.github.io/jq/) [dash](https://kapeli.com/dash) docset with no external dependencies.
+[jq](https://jqlang.github.io/jq/) [dash](https://kapeli.com/dash) docset.
 
 # Install docset in dash
 
@@ -24,6 +24,8 @@ docker run --rm -v "$PWD:$PWD" -w "$PWD" jqdocset ./build_docset.sh
 Now there should be a `jq.docset` directory that can be added as local docset and
 a `contrib` directory with files suitable to submit as a user contributed docset.
 
-# License
+# Thanks and license
 
-https://github.com/stedolan/jq/blob/master/COPYING
+Documentation and generated HTML is based on jq's own documentation system.
+
+https://github.com/jqlang/jq/blob/master/COPYING
