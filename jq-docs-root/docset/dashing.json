@@ -26,6 +26,7 @@
         "#types-and-values > section > h3 > code ": {"type": "Function", "requiretext": "^[a-z]\\w+", "regexp": "\\n", "replace": " "},
 
         "#builtin-operators-and-functions section > h3 > code ": {"type": "Function", "requiretext": "^[a-z]\\w+", "regexp": "\\n", "replace": " "},
+        "#builtin-operators-and-functions section#dates code ": {"type": "Function", "requiretext": "^[a-z]\\w+", "regexp": "\\n", "replace": " "},
 
         "#conditionals-and-comparisons > section > h3 code ": {"type": "Function", "requiretext": "^[a-z]\\w+", "regexp": "\\n", "replace": " "},
         "#regular-expressions > section > h3 > code ": {"type": "Function", "requiretext": "^[a-z]\\w+", "regexp": "\\n", "replace": " "},

@@ -31,7 +31,7 @@ filter and the <code>length</code> filter and then performing the division.</p>
 <p>But that&#39;s getting ahead of ourselves. :) Let&#39;s start with something
 simpler:</p>
         <section id="invoking-jq">
-          <a class="dashingAutolink" name="autolink-278"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Invoking%20jq"></a><h2>Invoking jq <a href="#invoking-jq" class="icon-link" aria-label="Link to this section: Invoking jq"><span class="bi bi-link-45deg" aria-hidden="true"></span></a></h2>
+          <a class="dashingAutolink" name="autolink-315"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Invoking%20jq"></a><h2>Invoking jq <a href="#invoking-jq" class="icon-link" aria-label="Link to this section: Invoking jq"><span class="bi bi-link-45deg" aria-hidden="true"></span></a></h2>
           <p>jq filters run on a stream of JSON data. The input to jq is
 parsed as a sequence of whitespace-separated JSON values which
 are passed through the provided filter one at a time. The
@@ -180,7 +180,7 @@ using some command-line options:</p>
 <li><code>-f filename</code> / <code>--from-file filename</code>:</li>
 </ul>
 <p>Read filter from the file rather than from a command line, like
-  awk&#39;s -f option. You can also use &#39;#&#39; to make comments.</p>
+  awk&#39;s -f option.</p>
 <ul>
 <li><code>-L directory</code>:</li>
 </ul>
@@ -279,11 +279,11 @@ using some command-line options:</p>
 <p>Be warned that this option can change backwards-incompatibly.</p>
         </section>
         <section id="basic-filters">
-          <a class="dashingAutolink" name="autolink-279"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Basic%20filters"></a><h2>Basic filters <a href="#basic-filters" class="icon-link" aria-label="Link to this section: Basic filters"><span class="bi bi-link-45deg" aria-hidden="true"></span></a></h2>
+          <a class="dashingAutolink" name="autolink-316"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Basic%20filters"></a><h2>Basic filters <a href="#basic-filters" class="icon-link" aria-label="Link to this section: Basic filters"><span class="bi bi-link-45deg" aria-hidden="true"></span></a></h2>
           
           <section id="identity">
-            <a class="dashingAutolink" name="autolink-28"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Identity%3A%20."></a><h3>
-              Identity: <a class="dashingAutolink" name="autolink-133"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/."></a><code>.</code>
+            <a class="dashingAutolink" name="autolink-257"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Identity%3A%20."></a><h3>
+              Identity: <a class="dashingAutolink" name="autolink-108"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/."></a><code>.</code>
               <a href="#identity" class="icon-link" aria-label="Link to this section: Identity: `.`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>The absolute simplest filter is <code>.</code> .  This filter takes its
@@ -435,8 +435,8 @@ illustrated in one of the following examples.</p>
             </div>
           </section>
           <section id="object-identifier-index">
-            <a class="dashingAutolink" name="autolink-29"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Object%20Identifier-Index%3A%20.foo%2C%20.foo.bar"></a><h3>
-              Object Identifier-Index: <a class="dashingAutolink" name="autolink-134"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/.foo"></a><code>.foo</code>, <a class="dashingAutolink" name="autolink-135"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/.foo.bar"></a><code>.foo.bar</code>
+            <a class="dashingAutolink" name="autolink-258"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Object%20Identifier-Index%3A%20.foo%2C%20.foo.bar"></a><h3>
+              Object Identifier-Index: <a class="dashingAutolink" name="autolink-109"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/.foo"></a><code>.foo</code>, <a class="dashingAutolink" name="autolink-110"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/.foo.bar"></a><code>.foo.bar</code>
               <a href="#object-identifier-index" class="icon-link" aria-label="Link to this section: Object Identifier-Index: `.foo`, `.foo.bar`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>The simplest <em>useful</em> filter has the form <code>.foo</code>. When given a
@@ -511,8 +511,8 @@ you need to surround it with double quotes like this:
             </div>
           </section>
           <section id="optional-object-identifier-index">
-            <a class="dashingAutolink" name="autolink-30"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Optional%20Object%20Identifier-Index%3A%20.foo%3F"></a><h3>
-              Optional Object Identifier-Index: <a class="dashingAutolink" name="autolink-136"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/.foo%3F"></a><code>.foo?</code>
+            <a class="dashingAutolink" name="autolink-259"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Optional%20Object%20Identifier-Index%3A%20.foo%3F"></a><h3>
+              Optional Object Identifier-Index: <a class="dashingAutolink" name="autolink-111"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/.foo%3F"></a><code>.foo?</code>
               <a href="#optional-object-identifier-index" class="icon-link" aria-label="Link to this section: Optional Object Identifier-Index: `.foo?`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>Just like <code>.foo</code>, but does not output an error when <code>.</code> is not an
@@ -595,8 +595,8 @@ object.</p>
             </div>
           </section>
           <section id="object-index">
-            <a class="dashingAutolink" name="autolink-31"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Object%20Index%3A%20.%5B%3Cstring%3E%5D"></a><h3>
-              Object Index: <a class="dashingAutolink" name="autolink-137"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/.%5B%3Cstring%3E%5D"></a><code>.[&lt;string&gt;]</code>
+            <a class="dashingAutolink" name="autolink-260"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Object%20Index%3A%20.%5B%3Cstring%3E%5D"></a><h3>
+              Object Index: <a class="dashingAutolink" name="autolink-112"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/.%5B%3Cstring%3E%5D"></a><code>.[&lt;string&gt;]</code>
               <a href="#object-index" class="icon-link" aria-label="Link to this section: Object Index: `.[&lt;string&gt;]`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>You can also look up fields of an object using syntax like
@@ -604,8 +604,8 @@ object.</p>
 only for identifier-like strings).</p>
           </section>
           <section id="array-index">
-            <a class="dashingAutolink" name="autolink-32"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Array%20Index%3A%20.%5B%3Cnumber%3E%5D"></a><h3>
-              Array Index: <a class="dashingAutolink" name="autolink-138"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/.%5B%3Cnumber%3E%5D"></a><code>.[&lt;number&gt;]</code>
+            <a class="dashingAutolink" name="autolink-261"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Array%20Index%3A%20.%5B%3Cnumber%3E%5D"></a><h3>
+              Array Index: <a class="dashingAutolink" name="autolink-113"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/.%5B%3Cnumber%3E%5D"></a><code>.[&lt;number&gt;]</code>
               <a href="#array-index" class="icon-link" aria-label="Link to this section: Array Index: `.[&lt;number&gt;]`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>When the index value is an integer, <code>.[&lt;number&gt;]</code> can index
@@ -673,8 +673,8 @@ element, -2 referring to the next to last element, and so on.</p>
             </div>
           </section>
           <section id="array-string-slice">
-            <a class="dashingAutolink" name="autolink-33"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Array%2FString%20Slice%3A%20.%5B%3Cnumber%3E%3A%3Cnumber%3E%5D"></a><h3>
-              Array/String Slice: <a class="dashingAutolink" name="autolink-139"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/.%5B%3Cnumber%3E%3A%3Cnumber%3E%5D"></a><code>.[&lt;number&gt;:&lt;number&gt;]</code>
+            <a class="dashingAutolink" name="autolink-262"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Array%2FString%20Slice%3A%20.%5B%3Cnumber%3E%3A%3Cnumber%3E%5D"></a><h3>
+              Array/String Slice: <a class="dashingAutolink" name="autolink-114"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/.%5B%3Cnumber%3E%3A%3Cnumber%3E%5D"></a><code>.[&lt;number&gt;:&lt;number&gt;]</code>
               <a href="#array-string-slice" class="icon-link" aria-label="Link to this section: Array/String Slice: `.[&lt;number&gt;:&lt;number&gt;]`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>The <code>.[&lt;number&gt;:&lt;number&gt;]</code> syntax can be used to return a
@@ -763,8 +763,8 @@ Indices are zero-based.</p>
             </div>
           </section>
           <section id="array-object-value-iterator">
-            <a class="dashingAutolink" name="autolink-34"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Array%2FObject%20Value%20Iterator%3A%20.%5B%5D"></a><h3>
-              Array/Object Value Iterator: <a class="dashingAutolink" name="autolink-140"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/.%5B%5D"></a><code>.[]</code>
+            <a class="dashingAutolink" name="autolink-263"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Array%2FObject%20Value%20Iterator%3A%20.%5B%5D"></a><h3>
+              Array/Object Value Iterator: <a class="dashingAutolink" name="autolink-115"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/.%5B%5D"></a><code>.[]</code>
               <a href="#array-object-value-iterator" class="icon-link" aria-label="Link to this section: Array/Object Value Iterator: `.[]`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>If you use the <code>.[index]</code> syntax, but omit the index
@@ -871,7 +871,7 @@ the values of the object.</p>
           </section>
           <section id=".[]?">
             <h3>
-              <a class="dashingAutolink" name="autolink-141"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/.%5B%5D%3F"></a><code>.[]?</code>
+              <a class="dashingAutolink" name="autolink-116"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/.%5B%5D%3F"></a><code>.[]?</code>
               <a href="#.[]?" class="icon-link" aria-label="Link to this section: `.[]?`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>Like <code>.[]</code>, but no errors will be output if . is not an array
@@ -879,8 +879,8 @@ or object. A filter of the form <code>.foo[]?</code> is equivalent to
 <code>.foo | .[]?</code>.</p>
           </section>
           <section id="comma">
-            <a class="dashingAutolink" name="autolink-35"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Comma%3A%20%2C"></a><h3>
-              Comma: <a class="dashingAutolink" name="autolink-142"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%2C"></a><code>,</code>
+            <a class="dashingAutolink" name="autolink-264"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Comma%3A%20%2C"></a><h3>
+              Comma: <a class="dashingAutolink" name="autolink-117"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%2C"></a><code>,</code>
               <a href="#comma" class="icon-link" aria-label="Link to this section: Comma: `,`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>If two filters are separated by a comma, then the
@@ -890,7 +890,7 @@ outputs produced by the left expression, and then all of the
 outputs produced by the right. For instance, filter <code>.foo,
 .bar</code>, produces both the &#34;foo&#34; fields and &#34;bar&#34; fields as
 separate outputs.</p>
-<p>The <code>,</code> operator is one way to contruct generators.</p>
+<p>The <code>,</code> operator is one way to construct generators.</p>
             <div class="pb-3">
               <div id="example7" class="mx-3 small d-print-block">
                 <table class="table table-borderless table-sm w-auto">
@@ -967,8 +967,8 @@ separate outputs.</p>
             </div>
           </section>
           <section id="pipe">
-            <a class="dashingAutolink" name="autolink-36"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Pipe%3A%20%7C"></a><h3>
-              Pipe: <a class="dashingAutolink" name="autolink-143"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%7C"></a><code>|</code>
+            <a class="dashingAutolink" name="autolink-265"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Pipe%3A%20%7C"></a><h3>
+              Pipe: <a class="dashingAutolink" name="autolink-118"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%7C"></a><code>|</code>
               <a href="#pipe" class="icon-link" aria-label="Link to this section: Pipe: `|`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>The | operator combines two filters by feeding the output(s) of
@@ -1012,7 +1012,7 @@ middle refers to whatever value <code>.a</code> produced.</p>
             </div>
           </section>
           <section id="parenthesis">
-            <a class="dashingAutolink" name="autolink-37"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Parenthesis"></a><h3>
+            <a class="dashingAutolink" name="autolink-266"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Parenthesis"></a><h3>
               Parenthesis
               <a href="#parenthesis" class="icon-link" aria-label="Link to this section: Parenthesis"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
@@ -1043,7 +1043,7 @@ programming language.</p>
           </section>
         </section>
         <section id="types-and-values">
-          <a class="dashingAutolink" name="autolink-280"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Types%20and%20Values"></a><h2>Types and Values <a href="#types-and-values" class="icon-link" aria-label="Link to this section: Types and Values"><span class="bi bi-link-45deg" aria-hidden="true"></span></a></h2>
+          <a class="dashingAutolink" name="autolink-317"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Types%20and%20Values"></a><h2>Types and Values <a href="#types-and-values" class="icon-link" aria-label="Link to this section: Types and Values"><span class="bi bi-link-45deg" aria-hidden="true"></span></a></h2>
           <p>jq supports the same set of datatypes as JSON - numbers,
 strings, booleans, arrays, objects (which in JSON-speak are
 hashes with only string keys), and &#34;null&#34;.</p>
@@ -1061,7 +1061,7 @@ string. If no mutation is applied to this value then it will make
 to the output in its original form, even if conversion to double
 would result in a loss.</p>
           <section id="array-construction">
-            <a class="dashingAutolink" name="autolink-38"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Array%20construction%3A%20%5B%5D"></a><h3>
+            <a class="dashingAutolink" name="autolink-267"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Array%20construction%3A%20%5B%5D"></a><h3>
               Array construction: <code>[]</code>
               <a href="#array-construction" class="icon-link" aria-label="Link to this section: Array construction: `[]`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
@@ -1122,7 +1122,7 @@ array of four elements.</p>
             </div>
           </section>
           <section id="object-construction">
-            <a class="dashingAutolink" name="autolink-39"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Object%20Construction%3A%20%7B%7D"></a><h3>
+            <a class="dashingAutolink" name="autolink-268"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Object%20Construction%3A%20%7B%7D"></a><h3>
               Object Construction: <code>{}</code>
               <a href="#object-construction" class="icon-link" aria-label="Link to this section: Object Construction: `{}`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
@@ -1221,7 +1221,7 @@ key and its value becomes the value,</p>
             </div>
           </section>
           <section id="recursive-descent">
-            <a class="dashingAutolink" name="autolink-40"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Recursive%20Descent%3A%20.."></a><h3>
+            <a class="dashingAutolink" name="autolink-269"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Recursive%20Descent%3A%20.."></a><h3>
               Recursive Descent: <code>..</code>
               <a href="#recursive-descent" class="icon-link" aria-label="Link to this section: Recursive Descent: `..`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
@@ -1258,7 +1258,7 @@ below we use <code>.. | .a?</code> to find all the values of object keys
           </section>
         </section>
         <section id="builtin-operators-and-functions">
-          <a class="dashingAutolink" name="autolink-281"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Builtin%20operators%20and%20functions"></a><h2>Builtin operators and functions <a href="#builtin-operators-and-functions" class="icon-link" aria-label="Link to this section: Builtin operators and functions"><span class="bi bi-link-45deg" aria-hidden="true"></span></a></h2>
+          <a class="dashingAutolink" name="autolink-318"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Builtin%20operators%20and%20functions"></a><h2>Builtin operators and functions <a href="#builtin-operators-and-functions" class="icon-link" aria-label="Link to this section: Builtin operators and functions"><span class="bi bi-link-45deg" aria-hidden="true"></span></a></h2>
           <p>Some jq operators (for instance, <code>+</code>) do different things
 depending on the type of their arguments (arrays, numbers,
 etc.). However, jq never does implicit type conversions. If you
@@ -1275,8 +1275,8 @@ original literal form. This also includes cases when the original literal
 would be truncated when converted to the IEEE754 double precision floating point
 number.</p>
           <section id="addition">
-            <a class="dashingAutolink" name="autolink-41"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Addition%3A%20%2B"></a><h3>
-              Addition: <a class="dashingAutolink" name="autolink-170"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%2B"></a><code>+</code>
+            <a class="dashingAutolink" name="autolink-270"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Addition%3A%20%2B"></a><h3>
+              Addition: <a class="dashingAutolink" name="autolink-248"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%2B"></a><code>+</code>
               <a href="#addition" class="icon-link" aria-label="Link to this section: Addition: `+`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>The operator <code>+</code> takes two filters, applies them both
@@ -1296,8 +1296,8 @@ to the same input, and adds the results together. What
 <p><strong>Objects</strong> are added by merging, that is, inserting all
   the key-value pairs from both objects into a single
   combined object. If both objects contain a value for the
-  same key, the object on the right of the <a class="dashingAutolink" name="autolink-144"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%2B"></a><code>+</code> wins. (For
-  recursive merge use the <a class="dashingAutolink" name="autolink-145"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%2A"></a><code>*</code> operator.)</p>
+  same key, the object on the right of the <a class="dashingAutolink" name="autolink-87"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%2B"></a><code>+</code> wins. (For
+  recursive merge use the <a class="dashingAutolink" name="autolink-88"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%2A"></a><code>*</code> operator.)</p>
 </li>
 </ul>
 <p><code>null</code> can be added to any value, and returns the other
@@ -1398,8 +1398,8 @@ value unchanged.</p>
             </div>
           </section>
           <section id="subtraction">
-            <a class="dashingAutolink" name="autolink-42"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Subtraction%3A%20-"></a><h3>
-              Subtraction: <a class="dashingAutolink" name="autolink-171"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/-"></a><code>-</code>
+            <a class="dashingAutolink" name="autolink-271"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Subtraction%3A%20-"></a><h3>
+              Subtraction: <a class="dashingAutolink" name="autolink-249"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/-"></a><code>-</code>
               <a href="#subtraction" class="icon-link" aria-label="Link to this section: Subtraction: `-`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>As well as normal arithmetic subtraction on numbers, the <code>-</code>
@@ -1447,8 +1447,8 @@ the second array&#39;s elements from the first array.</p>
             </div>
           </section>
           <section id="multiplication-division-modulo">
-            <a class="dashingAutolink" name="autolink-43"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Multiplication%2C%20division%2C%20modulo%3A%20%2A%2C%20%2F%2C%20%25"></a><h3>
-              Multiplication, division, modulo: <a class="dashingAutolink" name="autolink-172"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%2A"></a><code>*</code>, <a class="dashingAutolink" name="autolink-173"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%2F"></a><code>/</code>, <a class="dashingAutolink" name="autolink-174"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%25"></a><code>%</code>
+            <a class="dashingAutolink" name="autolink-272"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Multiplication%2C%20division%2C%20modulo%3A%20%2A%2C%20%2F%2C%20%25"></a><h3>
+              Multiplication, division, modulo: <a class="dashingAutolink" name="autolink-250"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%2A"></a><code>*</code>, <a class="dashingAutolink" name="autolink-251"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%2F"></a><code>/</code>, <a class="dashingAutolink" name="autolink-252"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%25"></a><code>%</code>
               <a href="#multiplication-division-modulo" class="icon-link" aria-label="Link to this section: Multiplication, division, modulo: `*`, `/`, `%`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>These infix operators behave as expected when given two numbers.
@@ -1544,7 +1544,7 @@ the same strategy.</p>
           </section>
           <section id="abs">
             <h3>
-              <a class="dashingAutolink" name="autolink-179"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/abs"></a><code>abs</code>
+              <a class="dashingAutolink" name="autolink-149"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/abs"></a><code>abs</code>
               <a href="#abs" class="icon-link" aria-label="Link to this section: `abs`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>The builtin function <code>abs</code> is defined naively as: <code>if . &lt; 0 then - . else . end</code>.</p>
@@ -1577,7 +1577,7 @@ definition for numeric input.</p>
           </section>
           <section id="length">
             <h3>
-              <a class="dashingAutolink" name="autolink-180"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/length"></a><code>length</code>
+              <a class="dashingAutolink" name="autolink-150"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/length"></a><code>length</code>
               <a href="#length" class="icon-link" aria-label="Link to this section: `length`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>The builtin function <code>length</code> gets the length of various
@@ -1645,7 +1645,7 @@ different types of value:</p>
           </section>
           <section id="utf8bytelength">
             <h3>
-              <a class="dashingAutolink" name="autolink-181"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/utf8bytelength"></a><code>utf8bytelength</code>
+              <a class="dashingAutolink" name="autolink-151"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/utf8bytelength"></a><code>utf8bytelength</code>
               <a href="#utf8bytelength" class="icon-link" aria-label="Link to this section: `utf8bytelength`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>The builtin function <code>utf8bytelength</code> outputs the number of
@@ -1675,7 +1675,7 @@ bytes used to encode a string in UTF-8.</p>
           </section>
           <section id="keys-keys_unsorted">
             <h3>
-              <a class="dashingAutolink" name="autolink-182"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/keys"></a><code>keys</code>, <a class="dashingAutolink" name="autolink-183"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/keys_unsorted"></a><code>keys_unsorted</code>
+              <a class="dashingAutolink" name="autolink-152"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/keys"></a><code>keys</code>, <a class="dashingAutolink" name="autolink-153"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/keys_unsorted"></a><code>keys_unsorted</code>
               <a href="#keys-keys_unsorted" class="icon-link" aria-label="Link to this section: `keys`, `keys_unsorted`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>The builtin function <code>keys</code>, when given an object, returns
@@ -1733,7 +1733,7 @@ instead the keys will roughly be in insertion order.</p>
           </section>
           <section id="has">
             <h3>
-              <a class="dashingAutolink" name="autolink-184"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/has%28key%29"></a><code>has(key)</code>
+              <a class="dashingAutolink" name="autolink-154"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/has%28key%29"></a><code>has(key)</code>
               <a href="#has" class="icon-link" aria-label="Link to this section: `has(key)`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>The builtin function <code>has</code> returns whether the input object
@@ -1785,7 +1785,7 @@ will be faster.</p>
           </section>
           <section id="in">
             <h3>
-              <a class="dashingAutolink" name="autolink-185"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/in"></a><code>in</code>
+              <a class="dashingAutolink" name="autolink-155"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/in"></a><code>in</code>
               <a href="#in" class="icon-link" aria-label="Link to this section: `in`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>The builtin function <code>in</code> returns whether or not the input key is in the
@@ -1839,7 +1839,7 @@ of <code>has</code>.</p>
           </section>
           <section id="map-map_values">
             <h3>
-              <a class="dashingAutolink" name="autolink-186"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/map%28f%29"></a><code>map(f)</code>, <a class="dashingAutolink" name="autolink-187"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/map_values%28f%29"></a><code>map_values(f)</code>
+              <a class="dashingAutolink" name="autolink-156"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/map%28f%29"></a><code>map(f)</code>, <a class="dashingAutolink" name="autolink-157"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/map_values%28f%29"></a><code>map_values(f)</code>
               <a href="#map-map_values" class="icon-link" aria-label="Link to this section: `map(f)`, `map_values(f)`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>For any filter <code>f</code>, <code>map(f)</code> and <code>map_values(f)</code> apply <code>f</code>
@@ -1955,7 +1955,7 @@ map_values(empty) #=&gt;  []
           </section>
           <section id="pick">
             <h3>
-              <a class="dashingAutolink" name="autolink-188"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/pick%28pathexps%29"></a><code>pick(pathexps)</code>
+              <a class="dashingAutolink" name="autolink-158"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/pick%28pathexps%29"></a><code>pick(pathexps)</code>
               <a href="#pick" class="icon-link" aria-label="Link to this section: `pick(pathexps)`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>Emit the projection of the input object or array defined by the
@@ -2006,7 +2006,7 @@ indices and <code>.[m:n]</code> specifications should not be used.</p>
           </section>
           <section id="path">
             <h3>
-              <a class="dashingAutolink" name="autolink-189"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/path%28path_expression%29"></a><code>path(path_expression)</code>
+              <a class="dashingAutolink" name="autolink-159"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/path%28path_expression%29"></a><code>path(path_expression)</code>
               <a href="#path" class="icon-link" aria-label="Link to this section: `path(path_expression)`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>Outputs array representations of the given path expression
@@ -2068,7 +2068,7 @@ boolean values in <code>.</code>, and only those paths.</p>
           </section>
           <section id="del">
             <h3>
-              <a class="dashingAutolink" name="autolink-190"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/del%28path_expression%29"></a><code>del(path_expression)</code>
+              <a class="dashingAutolink" name="autolink-160"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/del%28path_expression%29"></a><code>del(path_expression)</code>
               <a href="#del" class="icon-link" aria-label="Link to this section: `del(path_expression)`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>The builtin function <code>del</code> removes a key and its corresponding
@@ -2116,7 +2116,7 @@ value from an object.</p>
           </section>
           <section id="getpath">
             <h3>
-              <a class="dashingAutolink" name="autolink-191"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/getpath%28PATHS%29"></a><code>getpath(PATHS)</code>
+              <a class="dashingAutolink" name="autolink-161"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/getpath%28PATHS%29"></a><code>getpath(PATHS)</code>
               <a href="#getpath" class="icon-link" aria-label="Link to this section: `getpath(PATHS)`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>The builtin function <code>getpath</code> outputs the values in <code>.</code> found
@@ -2164,7 +2164,7 @@ at each path in <code>PATHS</code>.</p>
           </section>
           <section id="setpath">
             <h3>
-              <a class="dashingAutolink" name="autolink-192"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/setpath%28PATHS%3B%20VALUE%29"></a><code>setpath(PATHS; VALUE)</code>
+              <a class="dashingAutolink" name="autolink-162"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/setpath%28PATHS%3B%20VALUE%29"></a><code>setpath(PATHS; VALUE)</code>
               <a href="#setpath" class="icon-link" aria-label="Link to this section: `setpath(PATHS; VALUE)`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>The builtin function <code>setpath</code> sets the <code>PATHS</code> in <code>.</code> to <code>VALUE</code>.</p>
@@ -2229,7 +2229,7 @@ at each path in <code>PATHS</code>.</p>
           </section>
           <section id="delpaths">
             <h3>
-              <a class="dashingAutolink" name="autolink-193"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/delpaths%28PATHS%29"></a><code>delpaths(PATHS)</code>
+              <a class="dashingAutolink" name="autolink-163"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/delpaths%28PATHS%29"></a><code>delpaths(PATHS)</code>
               <a href="#delpaths" class="icon-link" aria-label="Link to this section: `delpaths(PATHS)`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>The builtin function <code>delpaths</code> deletes the <code>PATHS</code> in <code>.</code>.
@@ -2260,7 +2260,7 @@ of strings and numbers.</p>
           </section>
           <section id="to_entries-from_entries-with_entries">
             <h3>
-              <a class="dashingAutolink" name="autolink-194"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/to_entries"></a><code>to_entries</code>, <a class="dashingAutolink" name="autolink-195"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/from_entries"></a><code>from_entries</code>, <a class="dashingAutolink" name="autolink-196"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/with_entries%28f%29"></a><code>with_entries(f)</code>
+              <a class="dashingAutolink" name="autolink-164"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/to_entries"></a><code>to_entries</code>, <a class="dashingAutolink" name="autolink-165"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/from_entries"></a><code>from_entries</code>, <a class="dashingAutolink" name="autolink-166"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/with_entries%28f%29"></a><code>with_entries(f)</code>
               <a href="#to_entries-from_entries-with_entries" class="icon-link" aria-label="Link to this section: `to_entries`, `from_entries`, `with_entries(f)`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>These functions convert between an object and an array of
@@ -2333,7 +2333,7 @@ doing some operation to all keys and values of an object.
           </section>
           <section id="select">
             <h3>
-              <a class="dashingAutolink" name="autolink-197"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/select%28boolean_expression%29"></a><code>select(boolean_expression)</code>
+              <a class="dashingAutolink" name="autolink-167"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/select%28boolean_expression%29"></a><code>select(boolean_expression)</code>
               <a href="#select" class="icon-link" aria-label="Link to this section: `select(boolean_expression)`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>The function <code>select(f)</code> produces its input unchanged if
@@ -2384,7 +2384,7 @@ will give you <code>[2,3]</code>.</p>
           </section>
           <section id="arrays-objects-iterables-booleans-numbers-normals-finites-strings-nulls-values-scalars">
             <h3>
-              <a class="dashingAutolink" name="autolink-198"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/arrays"></a><code>arrays</code>, <a class="dashingAutolink" name="autolink-199"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/objects"></a><code>objects</code>, <a class="dashingAutolink" name="autolink-200"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/iterables"></a><code>iterables</code>, <a class="dashingAutolink" name="autolink-201"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/booleans"></a><code>booleans</code>, <a class="dashingAutolink" name="autolink-202"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/numbers"></a><code>numbers</code>, <a class="dashingAutolink" name="autolink-203"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/normals"></a><code>normals</code>, <a class="dashingAutolink" name="autolink-204"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/finites"></a><code>finites</code>, <a class="dashingAutolink" name="autolink-205"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/strings"></a><code>strings</code>, <a class="dashingAutolink" name="autolink-206"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/nulls"></a><code>nulls</code>, <a class="dashingAutolink" name="autolink-207"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/values"></a><code>values</code>, <a class="dashingAutolink" name="autolink-208"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/scalars"></a><code>scalars</code>
+              <a class="dashingAutolink" name="autolink-168"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/arrays"></a><code>arrays</code>, <a class="dashingAutolink" name="autolink-169"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/objects"></a><code>objects</code>, <a class="dashingAutolink" name="autolink-170"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/iterables"></a><code>iterables</code>, <a class="dashingAutolink" name="autolink-171"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/booleans"></a><code>booleans</code>, <a class="dashingAutolink" name="autolink-172"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/numbers"></a><code>numbers</code>, <a class="dashingAutolink" name="autolink-173"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/normals"></a><code>normals</code>, <a class="dashingAutolink" name="autolink-174"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/finites"></a><code>finites</code>, <a class="dashingAutolink" name="autolink-175"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/strings"></a><code>strings</code>, <a class="dashingAutolink" name="autolink-176"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/nulls"></a><code>nulls</code>, <a class="dashingAutolink" name="autolink-177"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/values"></a><code>values</code>, <a class="dashingAutolink" name="autolink-178"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/scalars"></a><code>scalars</code>
               <a href="#arrays-objects-iterables-booleans-numbers-normals-finites-strings-nulls-values-scalars" class="icon-link" aria-label="Link to this section: `arrays`, `objects`, `iterables`, `booleans`, `numbers`, `normals`, `finites`, `strings`, `nulls`, `values`, `scalars`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>These built-ins select only inputs that are arrays, objects,
@@ -2416,7 +2416,7 @@ non-iterables, respectively.</p>
           </section>
           <section id="empty">
             <h3>
-              <a class="dashingAutolink" name="autolink-209"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/empty"></a><code>empty</code>
+              <a class="dashingAutolink" name="autolink-179"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/empty"></a><code>empty</code>
               <a href="#empty" class="icon-link" aria-label="Link to this section: `empty`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p><code>empty</code> returns no results. None at all. Not even <code>null</code>.</p>
@@ -2468,7 +2468,7 @@ non-iterables, respectively.</p>
           </section>
           <section id="error">
             <h3>
-              <a class="dashingAutolink" name="autolink-210"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/error"></a><code>error</code>, <a class="dashingAutolink" name="autolink-211"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/error%28message%29"></a><code>error(message)</code>
+              <a class="dashingAutolink" name="autolink-180"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/error"></a><code>error</code>, <a class="dashingAutolink" name="autolink-181"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/error%28message%29"></a><code>error(message)</code>
               <a href="#error" class="icon-link" aria-label="Link to this section: `error`, `error(message)`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>Produces an error with the input value, or with the message
@@ -2517,7 +2517,7 @@ see below.</p>
           </section>
           <section id="halt">
             <h3>
-              <a class="dashingAutolink" name="autolink-212"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/halt"></a><code>halt</code>
+              <a class="dashingAutolink" name="autolink-182"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/halt"></a><code>halt</code>
               <a href="#halt" class="icon-link" aria-label="Link to this section: `halt`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>Stops the jq program with no further outputs.  jq will exit
@@ -2525,7 +2525,7 @@ with exit status <code>0</code>.</p>
           </section>
           <section id="halt_error">
             <h3>
-              <a class="dashingAutolink" name="autolink-213"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/halt_error"></a><code>halt_error</code>, <a class="dashingAutolink" name="autolink-214"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/halt_error%28exit_code%29"></a><code>halt_error(exit_code)</code>
+              <a class="dashingAutolink" name="autolink-183"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/halt_error"></a><code>halt_error</code>, <a class="dashingAutolink" name="autolink-184"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/halt_error%28exit_code%29"></a><code>halt_error(exit_code)</code>
               <a href="#halt_error" class="icon-link" aria-label="Link to this section: `halt_error`, `halt_error(exit_code)`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>Stops the jq program with no further outputs.  The input will
@@ -2537,7 +2537,7 @@ status.</p>
           </section>
           <section id="$__loc__">
             <h3>
-              <a class="dashingAutolink" name="autolink-175"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%24__loc__"></a><code>$__loc__</code>
+              <a class="dashingAutolink" name="autolink-253"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%24__loc__"></a><code>$__loc__</code>
               <a href="#$__loc__" class="icon-link" aria-label="Link to this section: `$__loc__`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>Produces an object with a &#34;file&#34; key and a &#34;line&#34; key, with
@@ -2568,7 +2568,7 @@ values.</p>
           </section>
           <section id="paths">
             <h3>
-              <a class="dashingAutolink" name="autolink-215"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/paths"></a><code>paths</code>, <a class="dashingAutolink" name="autolink-216"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/paths%28node_filter%29"></a><code>paths(node_filter)</code>
+              <a class="dashingAutolink" name="autolink-185"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/paths"></a><code>paths</code>, <a class="dashingAutolink" name="autolink-186"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/paths%28node_filter%29"></a><code>paths(node_filter)</code>
               <a href="#paths" class="icon-link" aria-label="Link to this section: `paths`, `paths(node_filter)`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p><code>paths</code> outputs the paths to all the elements in its input
@@ -2620,7 +2620,7 @@ values.</p>
           </section>
           <section id="add">
             <h3>
-              <a class="dashingAutolink" name="autolink-217"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/add"></a><code>add</code>
+              <a class="dashingAutolink" name="autolink-187"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/add"></a><code>add</code>
               <a href="#add" class="icon-link" aria-label="Link to this section: `add`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>The filter <code>add</code> takes as input an array, and produces as
@@ -2690,7 +2690,7 @@ as those for the <code>+</code> operator (described above).</p>
           </section>
           <section id="any">
             <h3>
-              <a class="dashingAutolink" name="autolink-218"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/any"></a><code>any</code>, <a class="dashingAutolink" name="autolink-219"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/any%28condition%29"></a><code>any(condition)</code>, <a class="dashingAutolink" name="autolink-220"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/any%28generator%3B%20condition%29"></a><code>any(generator; condition)</code>
+              <a class="dashingAutolink" name="autolink-188"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/any"></a><code>any</code>, <a class="dashingAutolink" name="autolink-189"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/any%28condition%29"></a><code>any(condition)</code>, <a class="dashingAutolink" name="autolink-190"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/any%28generator%3B%20condition%29"></a><code>any(generator; condition)</code>
               <a href="#any" class="icon-link" aria-label="Link to this section: `any`, `any(condition)`, `any(generator; condition)`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>The filter <code>any</code> takes as input an array of boolean values,
@@ -2762,7 +2762,7 @@ condition to all the outputs of the given generator.</p>
           </section>
           <section id="all">
             <h3>
-              <a class="dashingAutolink" name="autolink-221"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/all"></a><code>all</code>, <a class="dashingAutolink" name="autolink-222"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/all%28condition%29"></a><code>all(condition)</code>, <a class="dashingAutolink" name="autolink-223"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/all%28generator%3B%20condition%29"></a><code>all(generator; condition)</code>
+              <a class="dashingAutolink" name="autolink-191"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/all"></a><code>all</code>, <a class="dashingAutolink" name="autolink-192"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/all%28condition%29"></a><code>all(condition)</code>, <a class="dashingAutolink" name="autolink-193"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/all%28generator%3B%20condition%29"></a><code>all(generator; condition)</code>
               <a href="#all" class="icon-link" aria-label="Link to this section: `all`, `all(condition)`, `all(generator; condition)`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>The filter <code>all</code> takes as input an array of boolean values,
@@ -2834,7 +2834,7 @@ condition to all the outputs of the given generator.</p>
           </section>
           <section id="flatten">
             <h3>
-              <a class="dashingAutolink" name="autolink-224"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/flatten"></a><code>flatten</code>, <a class="dashingAutolink" name="autolink-225"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/flatten%28depth%29"></a><code>flatten(depth)</code>
+              <a class="dashingAutolink" name="autolink-194"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/flatten"></a><code>flatten</code>, <a class="dashingAutolink" name="autolink-195"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/flatten%28depth%29"></a><code>flatten(depth)</code>
               <a href="#flatten" class="icon-link" aria-label="Link to this section: `flatten`, `flatten(depth)`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>The filter <code>flatten</code> takes as input an array of nested arrays,
@@ -2922,7 +2922,7 @@ levels deep.</p>
           </section>
           <section id="range">
             <h3>
-              <a class="dashingAutolink" name="autolink-226"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/range%28upto%29"></a><code>range(upto)</code>, <a class="dashingAutolink" name="autolink-227"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/range%28from%3B%20upto%29"></a><code>range(from; upto)</code>, <a class="dashingAutolink" name="autolink-228"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/range%28from%3B%20upto%3B%20by%29"></a><code>range(from; upto; by)</code>
+              <a class="dashingAutolink" name="autolink-196"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/range%28upto%29"></a><code>range(upto)</code>, <a class="dashingAutolink" name="autolink-197"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/range%28from%3B%20upto%29"></a><code>range(from; upto)</code>, <a class="dashingAutolink" name="autolink-198"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/range%28from%3B%20upto%3B%20by%29"></a><code>range(from; upto; by)</code>
               <a href="#range" class="icon-link" aria-label="Link to this section: `range(upto)`, `range(from; upto)`, `range(from; upto; by)`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>The <code>range</code> function produces a range of numbers. <code>range(4; 10)</code>
@@ -3054,7 +3054,7 @@ with an increment of <code>by</code>.</p>
           </section>
           <section id="floor">
             <h3>
-              <a class="dashingAutolink" name="autolink-229"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/floor"></a><code>floor</code>
+              <a class="dashingAutolink" name="autolink-199"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/floor"></a><code>floor</code>
               <a href="#floor" class="icon-link" aria-label="Link to this section: `floor`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>The <code>floor</code> function returns the floor of its numeric input.</p>
@@ -3083,7 +3083,7 @@ with an increment of <code>by</code>.</p>
           </section>
           <section id="sqrt">
             <h3>
-              <a class="dashingAutolink" name="autolink-230"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/sqrt"></a><code>sqrt</code>
+              <a class="dashingAutolink" name="autolink-200"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/sqrt"></a><code>sqrt</code>
               <a href="#sqrt" class="icon-link" aria-label="Link to this section: `sqrt`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>The <code>sqrt</code> function returns the square root of its numeric input.</p>
@@ -3112,7 +3112,7 @@ with an increment of <code>by</code>.</p>
           </section>
           <section id="tonumber">
             <h3>
-              <a class="dashingAutolink" name="autolink-231"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/tonumber"></a><code>tonumber</code>
+              <a class="dashingAutolink" name="autolink-201"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/tonumber"></a><code>tonumber</code>
               <a href="#tonumber" class="icon-link" aria-label="Link to this section: `tonumber`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>The <code>tonumber</code> function parses its input as a number. It
@@ -3147,7 +3147,7 @@ equivalent, leave numbers alone, and give an error on all other input.</p>
           </section>
           <section id="tostring">
             <h3>
-              <a class="dashingAutolink" name="autolink-232"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/tostring"></a><code>tostring</code>
+              <a class="dashingAutolink" name="autolink-202"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/tostring"></a><code>tostring</code>
               <a href="#tostring" class="icon-link" aria-label="Link to this section: `tostring`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>The <code>tostring</code> function prints its input as a
@@ -3186,7 +3186,7 @@ JSON-encoded.</p>
           </section>
           <section id="type">
             <h3>
-              <a class="dashingAutolink" name="autolink-233"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/type"></a><code>type</code>
+              <a class="dashingAutolink" name="autolink-203"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/type"></a><code>type</code>
               <a href="#type" class="icon-link" aria-label="Link to this section: `type`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>The <code>type</code> function returns the type of its argument as a
@@ -3217,7 +3217,7 @@ or object.</p>
           </section>
           <section id="infinite-nan-isinfinite-isnan-isfinite-isnormal">
             <h3>
-              <a class="dashingAutolink" name="autolink-234"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/infinite"></a><code>infinite</code>, <a class="dashingAutolink" name="autolink-235"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/nan"></a><code>nan</code>, <a class="dashingAutolink" name="autolink-236"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/isinfinite"></a><code>isinfinite</code>, <a class="dashingAutolink" name="autolink-237"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/isnan"></a><code>isnan</code>, <a class="dashingAutolink" name="autolink-238"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/isfinite"></a><code>isfinite</code>, <a class="dashingAutolink" name="autolink-239"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/isnormal"></a><code>isnormal</code>
+              <a class="dashingAutolink" name="autolink-204"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/infinite"></a><code>infinite</code>, <a class="dashingAutolink" name="autolink-205"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/nan"></a><code>nan</code>, <a class="dashingAutolink" name="autolink-206"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/isinfinite"></a><code>isinfinite</code>, <a class="dashingAutolink" name="autolink-207"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/isnan"></a><code>isnan</code>, <a class="dashingAutolink" name="autolink-208"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/isfinite"></a><code>isfinite</code>, <a class="dashingAutolink" name="autolink-209"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/isnormal"></a><code>isnormal</code>
               <a href="#infinite-nan-isinfinite-isnan-isfinite-isnormal" class="icon-link" aria-label="Link to this section: `infinite`, `nan`, `isinfinite`, `isnan`, `isfinite`, `isnormal`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>Some arithmetic operations can yield infinities and &#34;not a
@@ -3281,7 +3281,7 @@ NaNs, and sub-normals do not raise errors.</p>
           </section>
           <section id="sort-sort_by">
             <h3>
-              <a class="dashingAutolink" name="autolink-240"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/sort"></a><code>sort</code>, <a class="dashingAutolink" name="autolink-241"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/sort_by%28path_expression%29"></a><code>sort_by(path_expression)</code>
+              <a class="dashingAutolink" name="autolink-210"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/sort"></a><code>sort</code>, <a class="dashingAutolink" name="autolink-211"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/sort_by%28path_expression%29"></a><code>sort_by(path_expression)</code>
               <a href="#sort-sort_by" class="icon-link" aria-label="Link to this section: `sort`, `sort_by(path_expression)`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>The <code>sort</code> functions sorts its input, which must be an
@@ -3366,7 +3366,7 @@ equal, and so on.</p>
           </section>
           <section id="group_by">
             <h3>
-              <a class="dashingAutolink" name="autolink-242"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/group_by%28path_expression%29"></a><code>group_by(path_expression)</code>
+              <a class="dashingAutolink" name="autolink-212"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/group_by%28path_expression%29"></a><code>group_by(path_expression)</code>
               <a href="#group_by" class="icon-link" aria-label="Link to this section: `group_by(path_expression)`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p><code>group_by(.foo)</code> takes as input an array, groups the
@@ -3401,7 +3401,7 @@ in the <code>sort</code> function above.</p>
           </section>
           <section id="min-max-min_by-max_by">
             <h3>
-              <a class="dashingAutolink" name="autolink-243"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/min"></a><code>min</code>, <a class="dashingAutolink" name="autolink-244"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/max"></a><code>max</code>, <a class="dashingAutolink" name="autolink-245"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/min_by%28path_exp%29"></a><code>min_by(path_exp)</code>, <a class="dashingAutolink" name="autolink-246"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/max_by%28path_exp%29"></a><code>max_by(path_exp)</code>
+              <a class="dashingAutolink" name="autolink-213"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/min"></a><code>min</code>, <a class="dashingAutolink" name="autolink-214"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/max"></a><code>max</code>, <a class="dashingAutolink" name="autolink-215"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/min_by%28path_exp%29"></a><code>min_by(path_exp)</code>, <a class="dashingAutolink" name="autolink-216"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/max_by%28path_exp%29"></a><code>max_by(path_exp)</code>
               <a href="#min-max-min_by-max_by" class="icon-link" aria-label="Link to this section: `min`, `max`, `min_by(path_exp)`, `max_by(path_exp)`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>Find the minimum or maximum element of the input array.</p>
@@ -3451,7 +3451,7 @@ you to specify a particular field or property to examine, e.g.
           </section>
           <section id="unique-unique_by">
             <h3>
-              <a class="dashingAutolink" name="autolink-247"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/unique"></a><code>unique</code>, <a class="dashingAutolink" name="autolink-248"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/unique_by%28path_exp%29"></a><code>unique_by(path_exp)</code>
+              <a class="dashingAutolink" name="autolink-217"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/unique"></a><code>unique</code>, <a class="dashingAutolink" name="autolink-218"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/unique_by%28path_exp%29"></a><code>unique_by(path_exp)</code>
               <a href="#unique-unique_by" class="icon-link" aria-label="Link to this section: `unique`, `unique_by(path_exp)`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>The <code>unique</code> function takes as input an array and produces
@@ -3522,7 +3522,7 @@ produced by <code>group</code>.</p>
           </section>
           <section id="reverse">
             <h3>
-              <a class="dashingAutolink" name="autolink-249"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/reverse"></a><code>reverse</code>
+              <a class="dashingAutolink" name="autolink-219"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/reverse"></a><code>reverse</code>
               <a href="#reverse" class="icon-link" aria-label="Link to this section: `reverse`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>This function reverses an array.</p>
@@ -3551,7 +3551,7 @@ produced by <code>group</code>.</p>
           </section>
           <section id="contains">
             <h3>
-              <a class="dashingAutolink" name="autolink-250"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/contains%28element%29"></a><code>contains(element)</code>
+              <a class="dashingAutolink" name="autolink-220"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/contains%28element%29"></a><code>contains(element)</code>
               <a href="#contains" class="icon-link" aria-label="Link to this section: `contains(element)`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>The filter <code>contains(b)</code> will produce true if b is
@@ -3659,7 +3659,7 @@ be contained in each other if they are equal.</p>
           </section>
           <section id="indices">
             <h3>
-              <a class="dashingAutolink" name="autolink-251"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/indices%28s%29"></a><code>indices(s)</code>
+              <a class="dashingAutolink" name="autolink-221"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/indices%28s%29"></a><code>indices(s)</code>
               <a href="#indices" class="icon-link" aria-label="Link to this section: `indices(s)`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>Outputs an array containing the indices in <code>.</code> where <code>s</code>
@@ -3727,7 +3727,7 @@ in <code>.</code> match those of <code>s</code>.</p>
           </section>
           <section id="index-rindex">
             <h3>
-              <a class="dashingAutolink" name="autolink-252"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/index%28s%29"></a><code>index(s)</code>, <a class="dashingAutolink" name="autolink-253"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/rindex%28s%29"></a><code>rindex(s)</code>
+              <a class="dashingAutolink" name="autolink-222"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/index%28s%29"></a><code>index(s)</code>, <a class="dashingAutolink" name="autolink-223"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/rindex%28s%29"></a><code>rindex(s)</code>
               <a href="#index-rindex" class="icon-link" aria-label="Link to this section: `index(s)`, `rindex(s)`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>Outputs the index of the first (<code>index</code>) or last (<code>rindex</code>)
@@ -3847,7 +3847,7 @@ occurrence of <code>s</code> in the input.</p>
           </section>
           <section id="inside">
             <h3>
-              <a class="dashingAutolink" name="autolink-254"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/inside"></a><code>inside</code>
+              <a class="dashingAutolink" name="autolink-224"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/inside"></a><code>inside</code>
               <a href="#inside" class="icon-link" aria-label="Link to this section: `inside`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>The filter <code>inside(b)</code> will produce true if the input is
@@ -3950,7 +3950,7 @@ inversed version of <code>contains</code>.</p>
           </section>
           <section id="startswith">
             <h3>
-              <a class="dashingAutolink" name="autolink-255"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/startswith%28str%29"></a><code>startswith(str)</code>
+              <a class="dashingAutolink" name="autolink-225"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/startswith%28str%29"></a><code>startswith(str)</code>
               <a href="#startswith" class="icon-link" aria-label="Link to this section: `startswith(str)`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>Outputs <code>true</code> if . starts with the given string argument.</p>
@@ -3979,7 +3979,7 @@ inversed version of <code>contains</code>.</p>
           </section>
           <section id="endswith">
             <h3>
-              <a class="dashingAutolink" name="autolink-256"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/endswith%28str%29"></a><code>endswith(str)</code>
+              <a class="dashingAutolink" name="autolink-226"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/endswith%28str%29"></a><code>endswith(str)</code>
               <a href="#endswith" class="icon-link" aria-label="Link to this section: `endswith(str)`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>Outputs <code>true</code> if . ends with the given string argument.</p>
@@ -4008,7 +4008,7 @@ inversed version of <code>contains</code>.</p>
           </section>
           <section id="combinations">
             <h3>
-              <a class="dashingAutolink" name="autolink-257"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/combinations"></a><code>combinations</code>, <a class="dashingAutolink" name="autolink-258"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/combinations%28n%29"></a><code>combinations(n)</code>
+              <a class="dashingAutolink" name="autolink-227"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/combinations"></a><code>combinations</code>, <a class="dashingAutolink" name="autolink-228"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/combinations%28n%29"></a><code>combinations(n)</code>
               <a href="#combinations" class="icon-link" aria-label="Link to this section: `combinations`, `combinations(n)`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>Outputs all combinations of the elements of the arrays in the
@@ -4081,7 +4081,7 @@ of <code>n</code> repetitions of the input array.</p>
           </section>
           <section id="ltrimstr">
             <h3>
-              <a class="dashingAutolink" name="autolink-259"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/ltrimstr%28str%29"></a><code>ltrimstr(str)</code>
+              <a class="dashingAutolink" name="autolink-229"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/ltrimstr%28str%29"></a><code>ltrimstr(str)</code>
               <a href="#ltrimstr" class="icon-link" aria-label="Link to this section: `ltrimstr(str)`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>Outputs its input with the given prefix string removed, if it
@@ -4111,7 +4111,7 @@ starts with it.</p>
           </section>
           <section id="rtrimstr">
             <h3>
-              <a class="dashingAutolink" name="autolink-260"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/rtrimstr%28str%29"></a><code>rtrimstr(str)</code>
+              <a class="dashingAutolink" name="autolink-230"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/rtrimstr%28str%29"></a><code>rtrimstr(str)</code>
               <a href="#rtrimstr" class="icon-link" aria-label="Link to this section: `rtrimstr(str)`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>Outputs its input with the given suffix string removed, if it
@@ -4141,7 +4141,7 @@ ends with it.</p>
           </section>
           <section id="explode">
             <h3>
-              <a class="dashingAutolink" name="autolink-261"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/explode"></a><code>explode</code>
+              <a class="dashingAutolink" name="autolink-231"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/explode"></a><code>explode</code>
               <a href="#explode" class="icon-link" aria-label="Link to this section: `explode`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>Converts an input string into an array of the string&#39;s
@@ -4171,7 +4171,7 @@ codepoint numbers.</p>
           </section>
           <section id="implode">
             <h3>
-              <a class="dashingAutolink" name="autolink-262"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/implode"></a><code>implode</code>
+              <a class="dashingAutolink" name="autolink-232"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/implode"></a><code>implode</code>
               <a href="#implode" class="icon-link" aria-label="Link to this section: `implode`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>The inverse of explode.</p>
@@ -4200,7 +4200,7 @@ codepoint numbers.</p>
           </section>
           <section id="split-1">
             <h3>
-              <a class="dashingAutolink" name="autolink-263"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/split%28str%29"></a><code>split(str)</code>
+              <a class="dashingAutolink" name="autolink-233"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/split%28str%29"></a><code>split(str)</code>
               <a href="#split-1" class="icon-link" aria-label="Link to this section: `split(str)`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>Splits an input string on the separator argument.</p>
@@ -4231,7 +4231,7 @@ two arguments (see the regular expressions section below).</p>
           </section>
           <section id="join">
             <h3>
-              <a class="dashingAutolink" name="autolink-264"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/join%28str%29"></a><code>join(str)</code>
+              <a class="dashingAutolink" name="autolink-234"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/join%28str%29"></a><code>join(str)</code>
               <a href="#join" class="icon-link" aria-label="Link to this section: `join(str)`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>Joins the array of elements given as input, using the
@@ -4284,7 +4284,7 @@ in the input are not supported.</p>
           </section>
           <section id="ascii_downcase-ascii_upcase">
             <h3>
-              <a class="dashingAutolink" name="autolink-265"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/ascii_downcase"></a><code>ascii_downcase</code>, <a class="dashingAutolink" name="autolink-266"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/ascii_upcase"></a><code>ascii_upcase</code>
+              <a class="dashingAutolink" name="autolink-235"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/ascii_downcase"></a><code>ascii_downcase</code>, <a class="dashingAutolink" name="autolink-236"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/ascii_upcase"></a><code>ascii_upcase</code>
               <a href="#ascii_downcase-ascii_upcase" class="icon-link" aria-label="Link to this section: `ascii_downcase`, `ascii_upcase`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>Emit a copy of the input string with its alphabetic characters (a-z and A-Z)
@@ -4314,7 +4314,7 @@ converted to the specified case.</p>
           </section>
           <section id="while">
             <h3>
-              <a class="dashingAutolink" name="autolink-267"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/while%28cond%3B%20update%29"></a><code>while(cond; update)</code>
+              <a class="dashingAutolink" name="autolink-237"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/while%28cond%3B%20update%29"></a><code>while(cond; update)</code>
               <a href="#while" class="icon-link" aria-label="Link to this section: `while(cond; update)`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>The <code>while(cond; update)</code> function allows you to repeatedly
@@ -4348,7 +4348,7 @@ output for each input.  See advanced topics below.</p>
           </section>
           <section id="repeat">
             <h3>
-              <a class="dashingAutolink" name="autolink-268"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/repeat%28exp%29"></a><code>repeat(exp)</code>
+              <a class="dashingAutolink" name="autolink-238"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/repeat%28exp%29"></a><code>repeat(exp)</code>
               <a href="#repeat" class="icon-link" aria-label="Link to this section: `repeat(exp)`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>The <code>repeat(exp)</code> function allows you to repeatedly
@@ -4382,7 +4382,7 @@ output for each input.  See advanced topics below.</p>
           </section>
           <section id="until">
             <h3>
-              <a class="dashingAutolink" name="autolink-269"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/until%28cond%3B%20next%29"></a><code>until(cond; next)</code>
+              <a class="dashingAutolink" name="autolink-239"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/until%28cond%3B%20next%29"></a><code>until(cond; next)</code>
               <a href="#until" class="icon-link" aria-label="Link to this section: `until(cond; next)`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>The <code>until(cond; next)</code> function allows you to repeatedly
@@ -4418,7 +4418,7 @@ output for each input.  See advanced topics below.</p>
           </section>
           <section id="recurse">
             <h3>
-              <a class="dashingAutolink" name="autolink-270"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/recurse%28f%29"></a><code>recurse(f)</code>, <a class="dashingAutolink" name="autolink-271"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/recurse"></a><code>recurse</code>, <a class="dashingAutolink" name="autolink-272"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/recurse%28f%3B%20condition%29"></a><code>recurse(f; condition)</code>
+              <a class="dashingAutolink" name="autolink-240"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/recurse%28f%29"></a><code>recurse(f)</code>, <a class="dashingAutolink" name="autolink-241"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/recurse"></a><code>recurse</code>, <a class="dashingAutolink" name="autolink-242"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/recurse%28f%3B%20condition%29"></a><code>recurse(f; condition)</code>
               <a href="#recurse" class="icon-link" aria-label="Link to this section: `recurse(f)`, `recurse`, `recurse(f; condition)`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>The <code>recurse(f)</code> function allows you to search through a
@@ -4543,7 +4543,7 @@ input.</p>
           </section>
           <section id="walk">
             <h3>
-              <a class="dashingAutolink" name="autolink-273"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/walk%28f%29"></a><code>walk(f)</code>
+              <a class="dashingAutolink" name="autolink-243"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/walk%28f%29"></a><code>walk(f)</code>
               <a href="#walk" class="icon-link" aria-label="Link to this section: `walk(f)`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>The <code>walk(f)</code> function applies f recursively to every
@@ -4600,7 +4600,7 @@ input can be considered for alteration.</p>
           </section>
           <section id="$jq_build_configuration">
             <h3>
-              <a class="dashingAutolink" name="autolink-176"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%24JQ_BUILD_CONFIGURATION"></a><code>$JQ_BUILD_CONFIGURATION</code>
+              <a class="dashingAutolink" name="autolink-254"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%24JQ_BUILD_CONFIGURATION"></a><code>$JQ_BUILD_CONFIGURATION</code>
               <a href="#$jq_build_configuration" class="icon-link" aria-label="Link to this section: `$JQ_BUILD_CONFIGURATION`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>This builtin binding shows the jq executable&#39;s build
@@ -4614,7 +4614,7 @@ with <code>--arg</code> and related options.</p>
           </section>
           <section id="$env-env">
             <h3>
-              <a class="dashingAutolink" name="autolink-177"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%24ENV"></a><code>$ENV</code>, <a class="dashingAutolink" name="autolink-274"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/env"></a><code>env</code>
+              <a class="dashingAutolink" name="autolink-255"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%24ENV"></a><code>$ENV</code>, <a class="dashingAutolink" name="autolink-244"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/env"></a><code>env</code>
               <a href="#$env-env" class="icon-link" aria-label="Link to this section: `$ENV`, `env`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p><code>$ENV</code> is an object representing the environment variables as
@@ -4665,7 +4665,7 @@ variables.</p>
           </section>
           <section id="transpose">
             <h3>
-              <a class="dashingAutolink" name="autolink-275"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/transpose"></a><code>transpose</code>
+              <a class="dashingAutolink" name="autolink-245"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/transpose"></a><code>transpose</code>
               <a href="#transpose" class="icon-link" aria-label="Link to this section: `transpose`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>Transpose a possibly jagged matrix (an array of arrays).
@@ -4695,7 +4695,7 @@ Rows are padded with nulls so the result is always rectangular.</p>
           </section>
           <section id="bsearch">
             <h3>
-              <a class="dashingAutolink" name="autolink-276"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/bsearch%28x%29"></a><code>bsearch(x)</code>
+              <a class="dashingAutolink" name="autolink-246"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/bsearch%28x%29"></a><code>bsearch(x)</code>
               <a href="#bsearch" class="icon-link" aria-label="Link to this section: `bsearch(x)`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p><code>bsearch(x)</code> conducts a binary search for x in the input
@@ -4766,8 +4766,8 @@ interest.</p>
             </div>
           </section>
           <section id="string-interpolation">
-            <a class="dashingAutolink" name="autolink-44"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/String%20interpolation%3A%20%5C%28exp%29"></a><h3>
-              String interpolation: <a class="dashingAutolink" name="autolink-178"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%5C%28exp%29"></a><code>\(exp)</code>
+            <a class="dashingAutolink" name="autolink-273"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/String%20interpolation%3A%20%5C%28exp%29"></a><h3>
+              String interpolation: <a class="dashingAutolink" name="autolink-256"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%5C%28exp%29"></a><code>\(exp)</code>
               <a href="#string-interpolation" class="icon-link" aria-label="Link to this section: String interpolation: `\(exp)`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>Inside a string, you can put an expression inside parens
@@ -4797,7 +4797,7 @@ interpolated into the string.</p>
             </div>
           </section>
           <section id="convert-to-from-json">
-            <a class="dashingAutolink" name="autolink-45"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Convert%20to%2Ffrom%20JSON"></a><h3>
+            <a class="dashingAutolink" name="autolink-274"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Convert%20to%2Ffrom%20JSON"></a><h3>
               Convert to/from JSON
               <a href="#convert-to-from-json" class="icon-link" aria-label="Link to this section: Convert to/from JSON"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
@@ -4865,7 +4865,7 @@ unmodified, while <code>tojson</code> encodes strings as JSON strings.</p>
             </div>
           </section>
           <section id="format-strings-and-escaping">
-            <a class="dashingAutolink" name="autolink-46"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Format%20strings%20and%20escaping"></a><h3>
+            <a class="dashingAutolink" name="autolink-275"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Format%20strings%20and%20escaping"></a><h3>
               Format strings and escaping
               <a href="#format-strings-and-escaping" class="icon-link" aria-label="Link to this section: Format strings and escaping"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
@@ -4874,32 +4874,32 @@ which is useful for building URLs, documents in a language
 like HTML or XML, and so forth. <code>@foo</code> can be used as a
 filter on its own, the possible escapings are:</p>
 <ul>
-<li><a class="dashingAutolink" name="autolink-146"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%40text"></a><code>@text</code>:</li>
+<li><a class="dashingAutolink" name="autolink-89"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%40text"></a><code>@text</code>:</li>
 </ul>
 <p>Calls <code>tostring</code>, see that function for details.</p>
 <ul>
-<li><a class="dashingAutolink" name="autolink-147"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%40json"></a><code>@json</code>:</li>
+<li><a class="dashingAutolink" name="autolink-90"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%40json"></a><code>@json</code>:</li>
 </ul>
 <p>Serializes the input as JSON.</p>
 <ul>
-<li><a class="dashingAutolink" name="autolink-148"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%40html"></a><code>@html</code>:</li>
+<li><a class="dashingAutolink" name="autolink-91"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%40html"></a><code>@html</code>:</li>
 </ul>
 <p>Applies HTML/XML escaping, by mapping the characters
   <code>&lt;&gt;&amp;&#39;&#34;</code> to their entity equivalents <code>&amp;lt;</code>, <code>&amp;gt;</code>,
   <code>&amp;amp;</code>, <code>&amp;apos;</code>, <code>&amp;quot;</code>.</p>
 <ul>
-<li><a class="dashingAutolink" name="autolink-149"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%40uri"></a><code>@uri</code>:</li>
+<li><a class="dashingAutolink" name="autolink-92"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%40uri"></a><code>@uri</code>:</li>
 </ul>
 <p>Applies percent-encoding, by mapping all reserved URI
   characters to a <code>%XX</code> sequence.</p>
 <ul>
-<li><a class="dashingAutolink" name="autolink-150"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%40csv"></a><code>@csv</code>:</li>
+<li><a class="dashingAutolink" name="autolink-93"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%40csv"></a><code>@csv</code>:</li>
 </ul>
 <p>The input must be an array, and it is rendered as CSV
   with double quotes for strings, and quotes escaped by
   repetition.</p>
 <ul>
-<li><a class="dashingAutolink" name="autolink-151"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%40tsv"></a><code>@tsv</code>:</li>
+<li><a class="dashingAutolink" name="autolink-94"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%40tsv"></a><code>@tsv</code>:</li>
 </ul>
 <p>The input must be an array, and it is rendered as TSV
   (tab-separated values). Each input array will be printed as
@@ -4909,17 +4909,17 @@ filter on its own, the possible escapings are:</p>
   backslash (ascii <code>0x5c</code>) will be output as escape sequences
   <code>\n</code>, <code>\r</code>, <code>\t</code>, <code>\\</code> respectively.</p>
 <ul>
-<li><a class="dashingAutolink" name="autolink-152"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%40sh"></a><code>@sh</code>:</li>
+<li><a class="dashingAutolink" name="autolink-95"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%40sh"></a><code>@sh</code>:</li>
 </ul>
 <p>The input is escaped suitable for use in a command-line
   for a POSIX shell. If the input is an array, the output
   will be a series of space-separated strings.</p>
 <ul>
-<li><a class="dashingAutolink" name="autolink-153"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%40base64"></a><code>@base64</code>:</li>
+<li><a class="dashingAutolink" name="autolink-96"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%40base64"></a><code>@base64</code>:</li>
 </ul>
 <p>The input is converted to base64 as specified by RFC 4648.</p>
 <ul>
-<li><a class="dashingAutolink" name="autolink-154"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%40base64d"></a><code>@base64d</code>:</li>
+<li><a class="dashingAutolink" name="autolink-97"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%40base64d"></a><code>@base64d</code>:</li>
 </ul>
 <p>The inverse of <code>@base64</code>, input is decoded as specified by RFC 4648.
   Note\: If the decoded string is not UTF-8, the results are undefined.</p>
@@ -5014,32 +5014,32 @@ not escaped, as they were part of the string literal.</p>
             </div>
           </section>
           <section id="dates">
-            <a class="dashingAutolink" name="autolink-47"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Dates"></a><h3>
+            <a class="dashingAutolink" name="autolink-276"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Dates"></a><h3>
               Dates
               <a href="#dates" class="icon-link" aria-label="Link to this section: Dates"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>jq provides some basic date handling functionality, with some
 high-level and low-level builtins.  In all cases these
 builtins deal exclusively with time in UTC.</p>
-<p>The <code>fromdateiso8601</code> builtin parses datetimes in the ISO 8601
+<p>The <a class="dashingAutolink" name="autolink-119"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/fromdateiso8601"></a><code>fromdateiso8601</code> builtin parses datetimes in the ISO 8601
 format to a number of seconds since the Unix epoch
-(1970-01-01T00:00:00Z).  The <code>todateiso8601</code> builtin does the
+(1970-01-01T00:00:00Z).  The <a class="dashingAutolink" name="autolink-120"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/todateiso8601"></a><code>todateiso8601</code> builtin does the
 inverse.</p>
-<p>The <code>fromdate</code> builtin parses datetime strings.  Currently
-<code>fromdate</code> only supports ISO 8601 datetime strings, but in the
+<p>The <a class="dashingAutolink" name="autolink-121"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/fromdate"></a><code>fromdate</code> builtin parses datetime strings.  Currently
+<a class="dashingAutolink" name="autolink-122"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/fromdate"></a><code>fromdate</code> only supports ISO 8601 datetime strings, but in the
 future it will attempt to parse datetime strings in more
 formats.</p>
-<p>The <code>todate</code> builtin is an alias for <code>todateiso8601</code>.</p>
-<p>The <code>now</code> builtin outputs the current time, in seconds since
+<p>The <a class="dashingAutolink" name="autolink-123"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/todate"></a><code>todate</code> builtin is an alias for <a class="dashingAutolink" name="autolink-124"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/todateiso8601"></a><code>todateiso8601</code>.</p>
+<p>The <a class="dashingAutolink" name="autolink-125"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/now"></a><code>now</code> builtin outputs the current time, in seconds since
 the Unix epoch.</p>
 <p>Low-level jq interfaces to the C-library time functions are
-also provided: <code>strptime</code>, <code>strftime</code>, <code>strflocaltime</code>,
-<code>mktime</code>, <code>gmtime</code>, and <code>localtime</code>.  Refer to your host
+also provided: <a class="dashingAutolink" name="autolink-126"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/strptime"></a><code>strptime</code>, <a class="dashingAutolink" name="autolink-127"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/strftime"></a><code>strftime</code>, <a class="dashingAutolink" name="autolink-128"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/strflocaltime"></a><code>strflocaltime</code>,
+<a class="dashingAutolink" name="autolink-129"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/mktime"></a><code>mktime</code>, <a class="dashingAutolink" name="autolink-130"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/gmtime"></a><code>gmtime</code>, and <a class="dashingAutolink" name="autolink-131"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/localtime"></a><code>localtime</code>.  Refer to your host
 operating system&#39;s documentation for the format strings used
-by <code>strptime</code> and <code>strftime</code>.  Note: these are not necessarily
+by <a class="dashingAutolink" name="autolink-132"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/strptime"></a><code>strptime</code> and <a class="dashingAutolink" name="autolink-133"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/strftime"></a><code>strftime</code>.  Note: these are not necessarily
 stable interfaces in jq, particularly as to their localization
 functionality.</p>
-<p>The <code>gmtime</code> builtin consumes a number of seconds since the
+<p>The <a class="dashingAutolink" name="autolink-134"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/gmtime"></a><code>gmtime</code> builtin consumes a number of seconds since the
 Unix epoch and outputs a &#34;broken down time&#34; representation of
 Greenwich Mean Time as an array of numbers representing
 (in this order): the year, the month (zero-based), the day of
@@ -5048,22 +5048,22 @@ hour, the second of the minute, the day of the week, and the
 day of the year -- all one-based unless otherwise stated.  The
 day of the week number may be wrong on some systems for dates
 before March 1st 1900, or after December 31 2099.</p>
-<p>The <code>localtime</code> builtin works like the <code>gmtime</code> builtin, but
+<p>The <a class="dashingAutolink" name="autolink-135"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/localtime"></a><code>localtime</code> builtin works like the <a class="dashingAutolink" name="autolink-136"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/gmtime"></a><code>gmtime</code> builtin, but
 using the local timezone setting.</p>
-<p>The <code>mktime</code> builtin consumes &#34;broken down time&#34;
-representations of time output by <code>gmtime</code> and <code>strptime</code>.</p>
-<p>The <code>strptime(fmt)</code> builtin parses input strings matching the
-<code>fmt</code> argument.  The output is in the &#34;broken down time&#34;
-representation consumed by <code>gmtime</code> and output by <code>mktime</code>.</p>
-<p>The <code>strftime(fmt)</code> builtin formats a time (GMT) with the
-given format.  The <code>strflocaltime</code> does the same, but using
+<p>The <a class="dashingAutolink" name="autolink-137"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/mktime"></a><code>mktime</code> builtin consumes &#34;broken down time&#34;
+representations of time output by <a class="dashingAutolink" name="autolink-138"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/gmtime"></a><code>gmtime</code> and <a class="dashingAutolink" name="autolink-139"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/strptime"></a><code>strptime</code>.</p>
+<p>The <a class="dashingAutolink" name="autolink-140"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/strptime%28fmt%29"></a><code>strptime(fmt)</code> builtin parses input strings matching the
+<a class="dashingAutolink" name="autolink-141"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/fmt"></a><code>fmt</code> argument.  The output is in the &#34;broken down time&#34;
+representation consumed by <a class="dashingAutolink" name="autolink-142"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/gmtime"></a><code>gmtime</code> and output by <a class="dashingAutolink" name="autolink-143"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/mktime"></a><code>mktime</code>.</p>
+<p>The <a class="dashingAutolink" name="autolink-144"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/strftime%28fmt%29"></a><code>strftime(fmt)</code> builtin formats a time (GMT) with the
+given format.  The <a class="dashingAutolink" name="autolink-145"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/strflocaltime"></a><code>strflocaltime</code> does the same, but using
 the local timezone setting.</p>
-<p>The format strings for <code>strptime</code> and <code>strftime</code> are described
+<p>The format strings for <a class="dashingAutolink" name="autolink-146"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/strptime"></a><code>strptime</code> and <a class="dashingAutolink" name="autolink-147"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/strftime"></a><code>strftime</code> are described
 in typical C library documentation.  The format string for ISO
 8601 datetime is <code>&#34;%Y-%m-%dT%H:%M:%SZ&#34;</code>.</p>
 <p>jq may not support some or all of this date functionality on
 some systems. In particular, the <code>%u</code> and <code>%j</code> specifiers for
-<code>strptime(fmt)</code> are not supported on macOS.</p>
+<a class="dashingAutolink" name="autolink-148"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/strptime%28fmt%29"></a><code>strptime(fmt)</code> are not supported on macOS.</p>
             <div class="pb-3">
               <div id="example77" class="mx-3 small d-print-block">
                 <table class="table table-borderless table-sm w-auto">
@@ -5124,7 +5124,7 @@ some systems. In particular, the <code>%u</code> and <code>%j</code> specifiers 
             </div>
           </section>
           <section id="sql-style-operators">
-            <a class="dashingAutolink" name="autolink-48"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/SQL-Style%20Operators"></a><h3>
+            <a class="dashingAutolink" name="autolink-277"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/SQL-Style%20Operators"></a><h3>
               SQL-Style Operators
               <a href="#sql-style-operators" class="icon-link" aria-label="Link to this section: SQL-Style Operators"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
@@ -5167,7 +5167,7 @@ some systems. In particular, the <code>%u</code> and <code>%j</code> specifiers 
           </section>
           <section id="builtins">
             <h3>
-              <a class="dashingAutolink" name="autolink-277"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/builtins"></a><code>builtins</code>
+              <a class="dashingAutolink" name="autolink-247"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/builtins"></a><code>builtins</code>
               <a href="#builtins" class="icon-link" aria-label="Link to this section: `builtins`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>Returns a list of all builtin functions in the format <code>name/arity</code>.
@@ -5177,11 +5177,11 @@ in the list.</p>
           </section>
         </section>
         <section id="conditionals-and-comparisons">
-          <a class="dashingAutolink" name="autolink-282"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Conditionals%20and%20Comparisons"></a><h2>Conditionals and Comparisons <a href="#conditionals-and-comparisons" class="icon-link" aria-label="Link to this section: Conditionals and Comparisons"><span class="bi bi-link-45deg" aria-hidden="true"></span></a></h2>
+          <a class="dashingAutolink" name="autolink-319"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Conditionals%20and%20Comparisons"></a><h2>Conditionals and Comparisons <a href="#conditionals-and-comparisons" class="icon-link" aria-label="Link to this section: Conditionals and Comparisons"><span class="bi bi-link-45deg" aria-hidden="true"></span></a></h2>
           
           <section id="==-!=">
             <h3>
-              <a class="dashingAutolink" name="autolink-291"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%3D%3D"></a><code>==</code>, <a class="dashingAutolink" name="autolink-292"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%21%3D"></a><code>!=</code>
+              <a class="dashingAutolink" name="autolink-68"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%3D%3D"></a><code>==</code>, <a class="dashingAutolink" name="autolink-69"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%21%3D"></a><code>!=</code>
               <a href="#==-!=" class="icon-link" aria-label="Link to this section: `==`, `!=`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>The expression &#39;a == b&#39; will produce &#39;true&#39; if the results of evaluating
@@ -5263,7 +5263,7 @@ JavaScript&#39;s <code>===</code>, the &#34;strict equality&#34; operator.</p>
             </div>
           </section>
           <section id="if-then-else-end">
-            <a class="dashingAutolink" name="autolink-49"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/if-then-else-end"></a><h3>
+            <a class="dashingAutolink" name="autolink-278"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/if-then-else-end"></a><h3>
               if-then-else-end
               <a href="#if-then-else-end" class="icon-link" aria-label="Link to this section: if-then-else-end"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
@@ -5314,7 +5314,7 @@ end&#39;</td>
           </section>
           <section id="&gt;-&gt;=-&lt;=-&lt;">
             <h3>
-              <a class="dashingAutolink" name="autolink-293"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%3E"></a><code>&gt;</code>, <a class="dashingAutolink" name="autolink-294"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%3E%3D"></a><code>&gt;=</code>, <a class="dashingAutolink" name="autolink-295"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%3C%3D"></a><code>&lt;=</code>, <a class="dashingAutolink" name="autolink-296"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%3C"></a><code>&lt;</code>
+              <a class="dashingAutolink" name="autolink-70"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%3E"></a><code>&gt;</code>, <a class="dashingAutolink" name="autolink-71"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%3E%3D"></a><code>&gt;=</code>, <a class="dashingAutolink" name="autolink-72"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%3C%3D"></a><code>&lt;=</code>, <a class="dashingAutolink" name="autolink-73"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%3C"></a><code>&lt;</code>
               <a href="#&gt;-&gt;=-&lt;=-&lt;" class="icon-link" aria-label="Link to this section: `&gt;`, `&gt;=`, `&lt;=`, `&lt;`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>The comparison operators <code>&gt;</code>, <code>&gt;=</code>, <code>&lt;=</code>, <code>&lt;</code> return whether
@@ -5347,7 +5347,7 @@ to, less than or equal to or less than their right argument
           </section>
           <section id="and-or-not">
             <h3>
-              <a class="dashingAutolink" name="autolink-25"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/and"></a><code>and</code>, <a class="dashingAutolink" name="autolink-26"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/or"></a><code>or</code>, <a class="dashingAutolink" name="autolink-27"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/not"></a><code>not</code>
+              <a class="dashingAutolink" name="autolink-329"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/and"></a><code>and</code>, <a class="dashingAutolink" name="autolink-330"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/or"></a><code>or</code>, <a class="dashingAutolink" name="autolink-331"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/not"></a><code>not</code>
               <a href="#and-or-not" class="icon-link" aria-label="Link to this section: `and`, `or`, `not`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>jq supports the normal Boolean operators <code>and</code>, <code>or</code>, <code>not</code>.
@@ -5460,12 +5460,12 @@ evaluating a condition, see the <code>//</code> operator below.</p>
             </div>
           </section>
           <section id="alternative-operator">
-            <a class="dashingAutolink" name="autolink-50"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Alternative%20operator%3A%20%2F%2F"></a><h3>
-              Alternative operator: <a class="dashingAutolink" name="autolink-297"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%2F%2F"></a><code>//</code>
+            <a class="dashingAutolink" name="autolink-279"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Alternative%20operator%3A%20%2F%2F"></a><h3>
+              Alternative operator: <a class="dashingAutolink" name="autolink-74"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%2F%2F"></a><code>//</code>
               <a href="#alternative-operator" class="icon-link" aria-label="Link to this section: Alternative operator: `//`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>The <code>//</code> operator produces all the values of its left-hand
-side that are neither <code>false</code> nor <code>null</code>, or, if the
+side that are neither <code>false</code> nor <code>null</code>. If the
 left-hand side produces no values other than <code>false</code> or
 <code>null</code>, then <code>//</code> produces all the values of its right-hand
 side.</p>
@@ -5595,7 +5595,7 @@ produced.</p>
             </div>
           </section>
           <section id="try-catch">
-            <a class="dashingAutolink" name="autolink-51"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/try-catch"></a><h3>
+            <a class="dashingAutolink" name="autolink-280"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/try-catch"></a><h3>
               try-catch
               <a href="#try-catch" class="icon-link" aria-label="Link to this section: try-catch"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
@@ -5665,7 +5665,7 @@ expression to try.</p>
             </div>
           </section>
           <section id="breaking-out-of-control-structures">
-            <a class="dashingAutolink" name="autolink-52"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Breaking%20out%20of%20control%20structures"></a><h3>
+            <a class="dashingAutolink" name="autolink-281"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Breaking%20out%20of%20control%20structures"></a><h3>
               Breaking out of control structures
               <a href="#breaking-out-of-control-structures" class="icon-link" aria-label="Link to this section: Breaking out of control structures"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
@@ -5681,7 +5681,7 @@ try repeat(exp) catch if .==&#34;break&#34; then empty else error
 <pre><code>label $out | ... break $out ...
 </code></pre>
 <p>The <code>break $label_name</code> expression will cause the program to
-to act as though the nearest (to the left) <code>label $label_name</code>
+act as though the nearest (to the left) <code>label $label_name</code>
 produced <code>empty</code>.</p>
 <p>The relationship between the <code>break</code> and corresponding <code>label</code>
 is lexical: the label has to be &#34;visible&#34; from the break.</p>
@@ -5694,8 +5694,8 @@ is lexical: the label has to be &#34;visible&#34; from the break.</p>
 <p>because no label <code>$out</code> is visible.</p>
           </section>
           <section id="error-suppression-optional-operator">
-            <a class="dashingAutolink" name="autolink-53"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Error%20Suppression%20%2F%20Optional%20Operator%3A%20%3F"></a><h3>
-              Error Suppression / Optional Operator: <a class="dashingAutolink" name="autolink-298"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%3F"></a><code>?</code>
+            <a class="dashingAutolink" name="autolink-282"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Error%20Suppression%20%2F%20Optional%20Operator%3A%20%3F"></a><h3>
+              Error Suppression / Optional Operator: <a class="dashingAutolink" name="autolink-75"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%3F"></a><code>?</code>
               <a href="#error-suppression-optional-operator" class="icon-link" aria-label="Link to this section: Error Suppression / Optional Operator: `?`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>The <code>?</code> operator, used as <code>EXP?</code>, is shorthand for <code>try EXP</code>.</p>
@@ -5742,7 +5742,7 @@ is lexical: the label has to be &#34;visible&#34; from the break.</p>
           </section>
         </section>
         <section id="regular-expressions">
-          <a class="dashingAutolink" name="autolink-283"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Regular%20expressions"></a><h2>Regular expressions <a href="#regular-expressions" class="icon-link" aria-label="Link to this section: Regular expressions"><span class="bi bi-link-45deg" aria-hidden="true"></span></a></h2>
+          <a class="dashingAutolink" name="autolink-320"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Regular%20expressions"></a><h2>Regular expressions <a href="#regular-expressions" class="icon-link" aria-label="Link to this section: Regular expressions"><span class="bi bi-link-45deg" aria-hidden="true"></span></a></h2>
           <p>jq uses the
 <a href="https://github.com/kkos/oniguruma/blob/master/doc/RE">Oniguruma regular expression library</a>,
 as do PHP, TextMate, Sublime Text, etc, so the
@@ -5785,7 +5785,7 @@ to form a regular expression must be escaped. For example, the regular expressio
 <p>evaluates to: <code>true</code>, <code>true</code>, <code>false</code>, <code>false</code>.</p>
           <section id="test">
             <h3>
-              <a class="dashingAutolink" name="autolink-10"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/test%28val%29"></a><code>test(val)</code>, <a class="dashingAutolink" name="autolink-11"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/test%28regex%3B%20flags%29"></a><code>test(regex; flags)</code>
+              <a class="dashingAutolink" name="autolink-293"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/test%28val%29"></a><code>test(val)</code>, <a class="dashingAutolink" name="autolink-294"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/test%28regex%3B%20flags%29"></a><code>test(regex; flags)</code>
               <a href="#test" class="icon-link" aria-label="Link to this section: `test(val)`, `test(regex; flags)`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>Like <code>match</code>, but does not return match objects, only <code>true</code> or <code>false</code>
@@ -5837,7 +5837,7 @@ for whether or not the regex matches the input.</p>
           </section>
           <section id="match">
             <h3>
-              <a class="dashingAutolink" name="autolink-12"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/match%28val%29"></a><code>match(val)</code>, <a class="dashingAutolink" name="autolink-13"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/match%28regex%3B%20flags%29"></a><code>match(regex; flags)</code>
+              <a class="dashingAutolink" name="autolink-295"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/match%28val%29"></a><code>match(val)</code>, <a class="dashingAutolink" name="autolink-296"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/match%28regex%3B%20flags%29"></a><code>match(regex; flags)</code>
               <a href="#match" class="icon-link" aria-label="Link to this section: `match(val)`, `match(regex; flags)`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p><strong>match</strong> outputs an object for each match it finds.  Matches have
@@ -5965,7 +5965,7 @@ the following fields:</p>
           </section>
           <section id="capture">
             <h3>
-              <a class="dashingAutolink" name="autolink-14"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/capture%28val%29"></a><code>capture(val)</code>, <a class="dashingAutolink" name="autolink-15"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/capture%28regex%3B%20flags%29"></a><code>capture(regex; flags)</code>
+              <a class="dashingAutolink" name="autolink-297"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/capture%28val%29"></a><code>capture(val)</code>, <a class="dashingAutolink" name="autolink-298"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/capture%28regex%3B%20flags%29"></a><code>capture(regex; flags)</code>
               <a href="#capture" class="icon-link" aria-label="Link to this section: `capture(val)`, `capture(regex; flags)`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>Collects the named captures in a JSON object, with the name
@@ -5996,7 +5996,7 @@ corresponding value.</p>
           </section>
           <section id="scan">
             <h3>
-              <a class="dashingAutolink" name="autolink-16"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/scan%28regex%29"></a><code>scan(regex)</code>, <a class="dashingAutolink" name="autolink-17"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/scan%28regex%3B%20flags%29"></a><code>scan(regex; flags)</code>
+              <a class="dashingAutolink" name="autolink-299"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/scan%28regex%29"></a><code>scan(regex)</code>, <a class="dashingAutolink" name="autolink-300"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/scan%28regex%3B%20flags%29"></a><code>scan(regex; flags)</code>
               <a href="#scan" class="icon-link" aria-label="Link to this section: `scan(regex)`, `scan(regex; flags)`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>Emit a stream of the non-overlapping substrings of the input
@@ -6033,7 +6033,7 @@ To capture all the matches for each input string, use the idiom
           </section>
           <section id="split-2">
             <h3>
-              <a class="dashingAutolink" name="autolink-18"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/split%28regex%3B%20flags%29"></a><code>split(regex; flags)</code>
+              <a class="dashingAutolink" name="autolink-301"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/split%28regex%3B%20flags%29"></a><code>split(regex; flags)</code>
               <a href="#split-2" class="icon-link" aria-label="Link to this section: `split(regex; flags)`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>Splits an input string on each regex match.</p>
@@ -6064,7 +6064,7 @@ To capture all the matches for each input string, use the idiom
           </section>
           <section id="splits">
             <h3>
-              <a class="dashingAutolink" name="autolink-19"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/splits%28regex%29"></a><code>splits(regex)</code>, <a class="dashingAutolink" name="autolink-20"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/splits%28regex%3B%20flags%29"></a><code>splits(regex; flags)</code>
+              <a class="dashingAutolink" name="autolink-302"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/splits%28regex%29"></a><code>splits(regex)</code>, <a class="dashingAutolink" name="autolink-303"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/splits%28regex%3B%20flags%29"></a><code>splits(regex; flags)</code>
               <a href="#splits" class="icon-link" aria-label="Link to this section: `splits(regex)`, `splits(regex; flags)`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>These provide the same results as their <code>split</code> counterparts,
@@ -6106,7 +6106,7 @@ but as a stream instead of an array.</p>
           </section>
           <section id="sub">
             <h3>
-              <a class="dashingAutolink" name="autolink-21"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/sub%28regex%3B%20tostring%29"></a><code>sub(regex; tostring)</code>, <a class="dashingAutolink" name="autolink-22"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/sub%28regex%3B%20tostring%3B%20flags%29"></a><code>sub(regex; tostring; flags)</code>
+              <a class="dashingAutolink" name="autolink-304"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/sub%28regex%3B%20tostring%29"></a><code>sub(regex; tostring)</code>, <a class="dashingAutolink" name="autolink-305"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/sub%28regex%3B%20tostring%3B%20flags%29"></a><code>sub(regex; tostring; flags)</code>
               <a href="#sub" class="icon-link" aria-label="Link to this section: `sub(regex; tostring)`, `sub(regex; tostring; flags)`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>Emit the string obtained by replacing the first match of
@@ -6160,7 +6160,7 @@ would take the form: <code>&#34;\(.x)&#34;</code>.</p>
           </section>
           <section id="gsub">
             <h3>
-              <a class="dashingAutolink" name="autolink-23"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/gsub%28regex%3B%20tostring%29"></a><code>gsub(regex; tostring)</code>, <a class="dashingAutolink" name="autolink-24"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/gsub%28regex%3B%20tostring%3B%20flags%29"></a><code>gsub(regex; tostring; flags)</code>
+              <a class="dashingAutolink" name="autolink-306"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/gsub%28regex%3B%20tostring%29"></a><code>gsub(regex; tostring)</code>, <a class="dashingAutolink" name="autolink-307"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/gsub%28regex%3B%20tostring%3B%20flags%29"></a><code>gsub(regex; tostring; flags)</code>
               <a href="#gsub" class="icon-link" aria-label="Link to this section: `gsub(regex; tostring)`, `gsub(regex; tostring; flags)`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p><code>gsub</code> is like <code>sub</code> but all the non-overlapping occurrences of the regex are
@@ -6209,7 +6209,7 @@ of jq strings, then <code>gsub</code> will produce a corresponding stream of JSO
           </section>
         </section>
         <section id="advanced-features">
-          <a class="dashingAutolink" name="autolink-284"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Advanced%20features"></a><h2>Advanced features <a href="#advanced-features" class="icon-link" aria-label="Link to this section: Advanced features"><span class="bi bi-link-45deg" aria-hidden="true"></span></a></h2>
+          <a class="dashingAutolink" name="autolink-321"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Advanced%20features"></a><h2>Advanced features <a href="#advanced-features" class="icon-link" aria-label="Link to this section: Advanced features"><span class="bi bi-link-45deg" aria-hidden="true"></span></a></h2>
           <p>Variables are an absolute necessity in most programming languages, but
 they&#39;re relegated to an &#34;advanced feature&#34; in jq.</p>
 <p>In most languages, variables are the only means of passing around
@@ -6232,8 +6232,8 @@ provided to help deal with generators.</p>
 input, and writing JSON to standard output) is available.</p>
 <p>Finally, there is a module/library system.</p>
           <section id="variable-symbolic-binding-operator">
-            <a class="dashingAutolink" name="autolink-54"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Variable%20%2F%20Symbolic%20Binding%20Operator%3A%20...%20as%20%24identifier%20%7C%20..."></a><h3>
-              Variable / Symbolic Binding Operator: <a class="dashingAutolink" name="autolink-0"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/...%20as%20%24identifier%20%7C%20..."></a><code>... as $identifier | ...</code>
+            <a class="dashingAutolink" name="autolink-283"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Variable%20%2F%20Symbolic%20Binding%20Operator%3A%20...%20as%20%24identifier%20%7C%20..."></a><h3>
+              Variable / Symbolic Binding Operator: <a class="dashingAutolink" name="autolink-5"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/...%20as%20%24identifier%20%7C%20..."></a><code>... as $identifier | ...</code>
               <a href="#variable-symbolic-binding-operator" class="icon-link" aria-label="Link to this section: Variable / Symbolic Binding Operator: `... as $identifier | ...`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>In jq, all filters have an input and an output, so manual
@@ -6389,8 +6389,8 @@ will not be visible where the old one was.</p>
             </div>
           </section>
           <section id="destructuring-alternative-operator">
-            <a class="dashingAutolink" name="autolink-55"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Destructuring%20Alternative%20Operator%3A%20%3F%2F%2F"></a><h3>
-              Destructuring Alternative Operator: <a class="dashingAutolink" name="autolink-1"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%3F%2F%2F"></a><code>?//</code>
+            <a class="dashingAutolink" name="autolink-284"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Destructuring%20Alternative%20Operator%3A%20%3F%2F%2F"></a><h3>
+              Destructuring Alternative Operator: <a class="dashingAutolink" name="autolink-6"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%3F%2F%2F"></a><code>?//</code>
               <a href="#destructuring-alternative-operator" class="icon-link" aria-label="Link to this section: Destructuring Alternative Operator: `?//`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>The destructuring alternative operator provides a concise mechanism
@@ -6487,7 +6487,7 @@ that occur during the final alternative are passed through.</p>
             </div>
           </section>
           <section id="defining-functions">
-            <a class="dashingAutolink" name="autolink-56"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Defining%20Functions"></a><h3>
+            <a class="dashingAutolink" name="autolink-285"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Defining%20Functions"></a><h3>
               Defining Functions
               <a href="#defining-functions" class="icon-link" aria-label="Link to this section: Defining Functions"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
@@ -6572,7 +6572,7 @@ See also the section below on scoping.</p>
             </div>
           </section>
           <section id="scoping">
-            <a class="dashingAutolink" name="autolink-57"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Scoping"></a><h3>
+            <a class="dashingAutolink" name="autolink-286"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Scoping"></a><h3>
               Scoping
               <a href="#scoping" class="icon-link" aria-label="Link to this section: Scoping"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
@@ -6591,7 +6591,7 @@ $times_three | [. + $times_three]) | ...</code>: here the binding
           </section>
           <section id="isempty">
             <h3>
-              <a class="dashingAutolink" name="autolink-299"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/isempty%28exp%29"></a><code>isempty(exp)</code>
+              <a class="dashingAutolink" name="autolink-98"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/isempty%28exp%29"></a><code>isempty(exp)</code>
               <a href="#isempty" class="icon-link" aria-label="Link to this section: `isempty(exp)`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>Returns true if <code>exp</code> produces no outputs, false otherwise.</p>
@@ -6656,7 +6656,7 @@ $times_three | [. + $times_three]) | ...</code>: here the binding
           </section>
           <section id="limit">
             <h3>
-              <a class="dashingAutolink" name="autolink-300"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/limit%28n%3B%20exp%29"></a><code>limit(n; exp)</code>
+              <a class="dashingAutolink" name="autolink-99"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/limit%28n%3B%20exp%29"></a><code>limit(n; exp)</code>
               <a href="#limit" class="icon-link" aria-label="Link to this section: `limit(n; exp)`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>The <code>limit</code> function extracts up to <code>n</code> outputs from <code>exp</code>.</p>
@@ -6685,7 +6685,7 @@ $times_three | [. + $times_three]) | ...</code>: here the binding
           </section>
           <section id="first-last-nth-2">
             <h3>
-              <a class="dashingAutolink" name="autolink-301"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/first%28expr%29"></a><code>first(expr)</code>, <a class="dashingAutolink" name="autolink-302"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/last%28expr%29"></a><code>last(expr)</code>, <a class="dashingAutolink" name="autolink-303"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/nth%28n%3B%20expr%29"></a><code>nth(n; expr)</code>
+              <a class="dashingAutolink" name="autolink-100"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/first%28expr%29"></a><code>first(expr)</code>, <a class="dashingAutolink" name="autolink-101"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/last%28expr%29"></a><code>last(expr)</code>, <a class="dashingAutolink" name="autolink-102"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/nth%28n%3B%20expr%29"></a><code>nth(n; expr)</code>
               <a href="#first-last-nth-2" class="icon-link" aria-label="Link to this section: `first(expr)`, `last(expr)`, `nth(n; expr)`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>The <code>first(expr)</code> and <code>last(expr)</code> functions extract the first
@@ -6717,7 +6717,7 @@ Note that <code>nth(n; expr)</code> doesn&#39;t support negative values of <code
           </section>
           <section id="first-last-nth-1">
             <h3>
-              <a class="dashingAutolink" name="autolink-304"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/first"></a><code>first</code>, <a class="dashingAutolink" name="autolink-305"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/last"></a><code>last</code>, <a class="dashingAutolink" name="autolink-306"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/nth%28n%29"></a><code>nth(n)</code>
+              <a class="dashingAutolink" name="autolink-103"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/first"></a><code>first</code>, <a class="dashingAutolink" name="autolink-104"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/last"></a><code>last</code>, <a class="dashingAutolink" name="autolink-105"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/nth%28n%29"></a><code>nth(n)</code>
               <a href="#first-last-nth-1" class="icon-link" aria-label="Link to this section: `first`, `last`, `nth(n)`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>The <code>first</code> and <code>last</code> functions extract the first
@@ -6748,7 +6748,7 @@ and last values from any array at <code>.</code>.</p>
           </section>
           <section id="reduce">
             <h3>
-              <a class="dashingAutolink" name="autolink-307"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/reduce"></a><code>reduce</code>
+              <a class="dashingAutolink" name="autolink-106"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/reduce"></a><code>reduce</code>
               <a href="#reduce" class="icon-link" aria-label="Link to this section: `reduce`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>The <code>reduce</code> syntax allows you to combine all of the results of
@@ -6826,7 +6826,7 @@ so the effect is similar to running something like this:</p>
           </section>
           <section id="foreach">
             <h3>
-              <a class="dashingAutolink" name="autolink-308"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/foreach"></a><code>foreach</code>
+              <a class="dashingAutolink" name="autolink-107"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/foreach"></a><code>foreach</code>
               <a href="#foreach" class="icon-link" aria-label="Link to this section: `foreach`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>The <code>foreach</code> syntax is similar to <code>reduce</code>, but intended to
@@ -6948,7 +6948,7 @@ That is, it outputs the intermediate values as they are.</p>
             </div>
           </section>
           <section id="recursion">
-            <a class="dashingAutolink" name="autolink-58"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Recursion"></a><h3>
+            <a class="dashingAutolink" name="autolink-287"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Recursion"></a><h3>
               Recursion
               <a href="#recursion" class="icon-link" aria-label="Link to this section: Recursion"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
@@ -6974,7 +6974,7 @@ def repeat(exp):
 </code></pre>
           </section>
           <section id="generators-and-iterators">
-            <a class="dashingAutolink" name="autolink-59"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Generators%20and%20iterators"></a><h3>
+            <a class="dashingAutolink" name="autolink-288"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Generators%20and%20iterators"></a><h3>
               Generators and iterators
               <a href="#generators-and-iterators" class="icon-link" aria-label="Link to this section: Generators and iterators"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
@@ -7055,7 +7055,7 @@ generator construction, and sub-functions.</p>
           </section>
         </section>
         <section id="math">
-          <a class="dashingAutolink" name="autolink-285"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Math"></a><h2>Math <a href="#math" class="icon-link" aria-label="Link to this section: Math"><span class="bi bi-link-45deg" aria-hidden="true"></span></a></h2>
+          <a class="dashingAutolink" name="autolink-322"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Math"></a><h2>Math <a href="#math" class="icon-link" aria-label="Link to this section: Math"><span class="bi bi-link-45deg" aria-hidden="true"></span></a></h2>
           <p>jq currently only has IEEE754 double-precision (64-bit) floating
 point number support.</p>
 <p>Besides simple arithmetic operators such as <code>+</code>, jq also has most
@@ -7070,33 +7070,33 @@ arguments are available as three-argument jq functions that ignore
 availability of the corresponding math functions in your operating
 system and C math library.  Unavailable math functions will be
 defined but will raise an error.</p>
-<p>One-input C math functions: <a class="dashingAutolink" name="autolink-72"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/acos"></a><code>acos</code> <a class="dashingAutolink" name="autolink-73"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/acosh"></a><code>acosh</code> <a class="dashingAutolink" name="autolink-74"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/asin"></a><code>asin</code> <a class="dashingAutolink" name="autolink-75"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/asinh"></a><code>asinh</code> <a class="dashingAutolink" name="autolink-76"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/atan"></a><code>atan</code>
-<a class="dashingAutolink" name="autolink-77"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/atanh"></a><code>atanh</code> <a class="dashingAutolink" name="autolink-78"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/cbrt"></a><code>cbrt</code> <a class="dashingAutolink" name="autolink-79"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/ceil"></a><code>ceil</code> <a class="dashingAutolink" name="autolink-80"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/cos"></a><code>cos</code> <a class="dashingAutolink" name="autolink-81"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/cosh"></a><code>cosh</code> <a class="dashingAutolink" name="autolink-82"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/erf"></a><code>erf</code> <a class="dashingAutolink" name="autolink-83"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/erfc"></a><code>erfc</code> <a class="dashingAutolink" name="autolink-84"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/exp"></a><code>exp</code> <a class="dashingAutolink" name="autolink-85"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/exp10"></a><code>exp10</code>
-<a class="dashingAutolink" name="autolink-86"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/exp2"></a><code>exp2</code> <a class="dashingAutolink" name="autolink-87"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/expm1"></a><code>expm1</code> <a class="dashingAutolink" name="autolink-88"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/fabs"></a><code>fabs</code> <a class="dashingAutolink" name="autolink-89"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/floor"></a><code>floor</code> <a class="dashingAutolink" name="autolink-90"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/gamma"></a><code>gamma</code> <a class="dashingAutolink" name="autolink-91"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/j0"></a><code>j0</code> <a class="dashingAutolink" name="autolink-92"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/j1"></a><code>j1</code> <a class="dashingAutolink" name="autolink-93"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/lgamma"></a><code>lgamma</code> <a class="dashingAutolink" name="autolink-94"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/log"></a><code>log</code>
-<a class="dashingAutolink" name="autolink-95"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/log10"></a><code>log10</code> <a class="dashingAutolink" name="autolink-96"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/log1p"></a><code>log1p</code> <a class="dashingAutolink" name="autolink-97"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/log2"></a><code>log2</code> <a class="dashingAutolink" name="autolink-98"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/logb"></a><code>logb</code> <a class="dashingAutolink" name="autolink-99"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/nearbyint"></a><code>nearbyint</code> <a class="dashingAutolink" name="autolink-100"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/pow10"></a><code>pow10</code> <a class="dashingAutolink" name="autolink-101"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/rint"></a><code>rint</code> <a class="dashingAutolink" name="autolink-102"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/round"></a><code>round</code>
-<a class="dashingAutolink" name="autolink-103"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/significand"></a><code>significand</code> <a class="dashingAutolink" name="autolink-104"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/sin"></a><code>sin</code> <a class="dashingAutolink" name="autolink-105"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/sinh"></a><code>sinh</code> <a class="dashingAutolink" name="autolink-106"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/sqrt"></a><code>sqrt</code> <a class="dashingAutolink" name="autolink-107"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/tan"></a><code>tan</code> <a class="dashingAutolink" name="autolink-108"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/tanh"></a><code>tanh</code> <a class="dashingAutolink" name="autolink-109"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/tgamma"></a><code>tgamma</code> <a class="dashingAutolink" name="autolink-110"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/trunc"></a><code>trunc</code>
-<a class="dashingAutolink" name="autolink-111"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/y0"></a><code>y0</code> <a class="dashingAutolink" name="autolink-112"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/y1"></a><code>y1</code>.</p>
-<p>Two-input C math functions: <a class="dashingAutolink" name="autolink-113"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/atan2"></a><code>atan2</code> <a class="dashingAutolink" name="autolink-114"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/copysign"></a><code>copysign</code> <a class="dashingAutolink" name="autolink-115"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/drem"></a><code>drem</code> <a class="dashingAutolink" name="autolink-116"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/fdim"></a><code>fdim</code>
-<a class="dashingAutolink" name="autolink-117"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/fmax"></a><code>fmax</code> <a class="dashingAutolink" name="autolink-118"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/fmin"></a><code>fmin</code> <a class="dashingAutolink" name="autolink-119"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/fmod"></a><code>fmod</code> <a class="dashingAutolink" name="autolink-120"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/frexp"></a><code>frexp</code> <a class="dashingAutolink" name="autolink-121"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/hypot"></a><code>hypot</code> <a class="dashingAutolink" name="autolink-122"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/jn"></a><code>jn</code> <a class="dashingAutolink" name="autolink-123"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/ldexp"></a><code>ldexp</code> <a class="dashingAutolink" name="autolink-124"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/modf"></a><code>modf</code>
-<a class="dashingAutolink" name="autolink-125"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/nextafter"></a><code>nextafter</code> <a class="dashingAutolink" name="autolink-126"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/nexttoward"></a><code>nexttoward</code> <a class="dashingAutolink" name="autolink-127"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/pow"></a><code>pow</code> <a class="dashingAutolink" name="autolink-128"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/remainder"></a><code>remainder</code> <a class="dashingAutolink" name="autolink-129"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/scalb"></a><code>scalb</code> <a class="dashingAutolink" name="autolink-130"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/scalbln"></a><code>scalbln</code> <a class="dashingAutolink" name="autolink-131"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/yn"></a><code>yn</code>.</p>
-<p>Three-input C math functions: <a class="dashingAutolink" name="autolink-132"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/fma"></a><code>fma</code>.</p>
+<p>One-input C math functions: <a class="dashingAutolink" name="autolink-7"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/acos"></a><code>acos</code> <a class="dashingAutolink" name="autolink-8"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/acosh"></a><code>acosh</code> <a class="dashingAutolink" name="autolink-9"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/asin"></a><code>asin</code> <a class="dashingAutolink" name="autolink-10"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/asinh"></a><code>asinh</code> <a class="dashingAutolink" name="autolink-11"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/atan"></a><code>atan</code>
+<a class="dashingAutolink" name="autolink-12"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/atanh"></a><code>atanh</code> <a class="dashingAutolink" name="autolink-13"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/cbrt"></a><code>cbrt</code> <a class="dashingAutolink" name="autolink-14"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/ceil"></a><code>ceil</code> <a class="dashingAutolink" name="autolink-15"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/cos"></a><code>cos</code> <a class="dashingAutolink" name="autolink-16"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/cosh"></a><code>cosh</code> <a class="dashingAutolink" name="autolink-17"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/erf"></a><code>erf</code> <a class="dashingAutolink" name="autolink-18"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/erfc"></a><code>erfc</code> <a class="dashingAutolink" name="autolink-19"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/exp"></a><code>exp</code> <a class="dashingAutolink" name="autolink-20"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/exp10"></a><code>exp10</code>
+<a class="dashingAutolink" name="autolink-21"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/exp2"></a><code>exp2</code> <a class="dashingAutolink" name="autolink-22"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/expm1"></a><code>expm1</code> <a class="dashingAutolink" name="autolink-23"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/fabs"></a><code>fabs</code> <a class="dashingAutolink" name="autolink-24"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/floor"></a><code>floor</code> <a class="dashingAutolink" name="autolink-25"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/gamma"></a><code>gamma</code> <a class="dashingAutolink" name="autolink-26"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/j0"></a><code>j0</code> <a class="dashingAutolink" name="autolink-27"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/j1"></a><code>j1</code> <a class="dashingAutolink" name="autolink-28"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/lgamma"></a><code>lgamma</code> <a class="dashingAutolink" name="autolink-29"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/log"></a><code>log</code>
+<a class="dashingAutolink" name="autolink-30"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/log10"></a><code>log10</code> <a class="dashingAutolink" name="autolink-31"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/log1p"></a><code>log1p</code> <a class="dashingAutolink" name="autolink-32"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/log2"></a><code>log2</code> <a class="dashingAutolink" name="autolink-33"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/logb"></a><code>logb</code> <a class="dashingAutolink" name="autolink-34"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/nearbyint"></a><code>nearbyint</code> <a class="dashingAutolink" name="autolink-35"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/pow10"></a><code>pow10</code> <a class="dashingAutolink" name="autolink-36"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/rint"></a><code>rint</code> <a class="dashingAutolink" name="autolink-37"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/round"></a><code>round</code>
+<a class="dashingAutolink" name="autolink-38"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/significand"></a><code>significand</code> <a class="dashingAutolink" name="autolink-39"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/sin"></a><code>sin</code> <a class="dashingAutolink" name="autolink-40"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/sinh"></a><code>sinh</code> <a class="dashingAutolink" name="autolink-41"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/sqrt"></a><code>sqrt</code> <a class="dashingAutolink" name="autolink-42"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/tan"></a><code>tan</code> <a class="dashingAutolink" name="autolink-43"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/tanh"></a><code>tanh</code> <a class="dashingAutolink" name="autolink-44"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/tgamma"></a><code>tgamma</code> <a class="dashingAutolink" name="autolink-45"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/trunc"></a><code>trunc</code>
+<a class="dashingAutolink" name="autolink-46"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/y0"></a><code>y0</code> <a class="dashingAutolink" name="autolink-47"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/y1"></a><code>y1</code>.</p>
+<p>Two-input C math functions: <a class="dashingAutolink" name="autolink-48"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/atan2"></a><code>atan2</code> <a class="dashingAutolink" name="autolink-49"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/copysign"></a><code>copysign</code> <a class="dashingAutolink" name="autolink-50"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/drem"></a><code>drem</code> <a class="dashingAutolink" name="autolink-51"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/fdim"></a><code>fdim</code>
+<a class="dashingAutolink" name="autolink-52"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/fmax"></a><code>fmax</code> <a class="dashingAutolink" name="autolink-53"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/fmin"></a><code>fmin</code> <a class="dashingAutolink" name="autolink-54"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/fmod"></a><code>fmod</code> <a class="dashingAutolink" name="autolink-55"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/frexp"></a><code>frexp</code> <a class="dashingAutolink" name="autolink-56"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/hypot"></a><code>hypot</code> <a class="dashingAutolink" name="autolink-57"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/jn"></a><code>jn</code> <a class="dashingAutolink" name="autolink-58"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/ldexp"></a><code>ldexp</code> <a class="dashingAutolink" name="autolink-59"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/modf"></a><code>modf</code>
+<a class="dashingAutolink" name="autolink-60"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/nextafter"></a><code>nextafter</code> <a class="dashingAutolink" name="autolink-61"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/nexttoward"></a><code>nexttoward</code> <a class="dashingAutolink" name="autolink-62"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/pow"></a><code>pow</code> <a class="dashingAutolink" name="autolink-63"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/remainder"></a><code>remainder</code> <a class="dashingAutolink" name="autolink-64"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/scalb"></a><code>scalb</code> <a class="dashingAutolink" name="autolink-65"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/scalbln"></a><code>scalbln</code> <a class="dashingAutolink" name="autolink-66"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/yn"></a><code>yn</code>.</p>
+<p>Three-input C math functions: <a class="dashingAutolink" name="autolink-67"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/fma"></a><code>fma</code>.</p>
 <p>See your system&#39;s manual for more information on each of these.</p>
         </section>
         <section id="io">
-          <a class="dashingAutolink" name="autolink-286"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/I%2FO"></a><h2>I/O <a href="#io" class="icon-link" aria-label="Link to this section: I/O"><span class="bi bi-link-45deg" aria-hidden="true"></span></a></h2>
+          <a class="dashingAutolink" name="autolink-323"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/I%2FO"></a><h2>I/O <a href="#io" class="icon-link" aria-label="Link to this section: I/O"><span class="bi bi-link-45deg" aria-hidden="true"></span></a></h2>
           <p>At this time jq has minimal support for I/O, mostly in the
 form of control over when inputs are read.  Two builtins functions
-are provided for this, <a class="dashingAutolink" name="autolink-2"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/input"></a><code>input</code> and <a class="dashingAutolink" name="autolink-3"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/inputs"></a><code>inputs</code>, that read from the
-same sources (e.g., <a class="dashingAutolink" name="autolink-4"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/stdin"></a><code>stdin</code>, files named on the command-line) as
+are provided for this, <a class="dashingAutolink" name="autolink-76"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/input"></a><code>input</code> and <a class="dashingAutolink" name="autolink-77"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/inputs"></a><code>inputs</code>, that read from the
+same sources (e.g., <a class="dashingAutolink" name="autolink-78"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/stdin"></a><code>stdin</code>, files named on the command-line) as
 jq itself.  These two builtins, and jq&#39;s own reading actions, can
 be interleaved with each other.  They are commonly used in combination
 with the null input option <code>-n</code> to prevent one input from being read
 implicitly.</p>
-<p>Two builtins provide minimal output capabilities, <a class="dashingAutolink" name="autolink-5"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/debug"></a><code>debug</code>, and
-<a class="dashingAutolink" name="autolink-6"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/stderr"></a><code>stderr</code>.  (Recall that a jq program&#39;s output values are always
-output as JSON texts on <a class="dashingAutolink" name="autolink-7"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/stdout"></a><code>stdout</code>.) The <a class="dashingAutolink" name="autolink-8"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/debug"></a><code>debug</code> builtin can have
+<p>Two builtins provide minimal output capabilities, <a class="dashingAutolink" name="autolink-79"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/debug"></a><code>debug</code>, and
+<a class="dashingAutolink" name="autolink-80"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/stderr"></a><code>stderr</code>.  (Recall that a jq program&#39;s output values are always
+output as JSON texts on <a class="dashingAutolink" name="autolink-81"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/stdout"></a><code>stdout</code>.) The <a class="dashingAutolink" name="autolink-82"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/debug"></a><code>debug</code> builtin can have
 application-specific behavior, such as for executables that use
-the libjq C API but aren&#39;t the jq executable itself.  The <a class="dashingAutolink" name="autolink-9"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/stderr"></a><code>stderr</code>
+the libjq C API but aren&#39;t the jq executable itself.  The <a class="dashingAutolink" name="autolink-83"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/stderr"></a><code>stderr</code>
 builtin outputs its input in raw mode to stder with no additional
 decoration, not even a newline.</p>
 <p>Most jq builtins are referentially transparent, and yield constant
@@ -7104,7 +7104,7 @@ and repeatable value streams when applied to constant inputs.
 This is not true of I/O builtins.</p>
           <section id="input">
             <h3>
-              <a class="dashingAutolink" name="autolink-163"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/input"></a><code>input</code>
+              <a class="dashingAutolink" name="autolink-308"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/input"></a><code>input</code>
               <a href="#input" class="icon-link" aria-label="Link to this section: `input`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>Outputs one new input.</p>
@@ -7116,7 +7116,7 @@ the first entity will be lost.</p>
           </section>
           <section id="inputs">
             <h3>
-              <a class="dashingAutolink" name="autolink-164"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/inputs"></a><code>inputs</code>
+              <a class="dashingAutolink" name="autolink-309"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/inputs"></a><code>inputs</code>
               <a href="#inputs" class="icon-link" aria-label="Link to this section: `inputs`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>Outputs all remaining inputs, one by one.</p>
@@ -7129,7 +7129,7 @@ the first entity will be lost.</p>
           </section>
           <section id="debug">
             <h3>
-              <a class="dashingAutolink" name="autolink-165"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/debug"></a><code>debug</code>, <a class="dashingAutolink" name="autolink-166"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/debug%28msgs%29"></a><code>debug(msgs)</code>
+              <a class="dashingAutolink" name="autolink-310"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/debug"></a><code>debug</code>, <a class="dashingAutolink" name="autolink-311"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/debug%28msgs%29"></a><code>debug(msgs)</code>
               <a href="#debug" class="icon-link" aria-label="Link to this section: `debug`, `debug(msgs)`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>These two filters are like <code>.</code> but have as a side-effect the
@@ -7153,7 +7153,7 @@ being written to stderr:</p>
           </section>
           <section id="stderr">
             <h3>
-              <a class="dashingAutolink" name="autolink-167"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/stderr"></a><code>stderr</code>
+              <a class="dashingAutolink" name="autolink-312"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/stderr"></a><code>stderr</code>
               <a href="#stderr" class="icon-link" aria-label="Link to this section: `stderr`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>Prints its input in raw and compact mode to stderr with no
@@ -7161,7 +7161,7 @@ additional decoration, not even a newline.</p>
           </section>
           <section id="input_filename">
             <h3>
-              <a class="dashingAutolink" name="autolink-168"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/input_filename"></a><code>input_filename</code>
+              <a class="dashingAutolink" name="autolink-313"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/input_filename"></a><code>input_filename</code>
               <a href="#input_filename" class="icon-link" aria-label="Link to this section: `input_filename`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>Returns the name of the file whose input is currently being
@@ -7170,14 +7170,14 @@ running in a UTF-8 locale.</p>
           </section>
           <section id="input_line_number">
             <h3>
-              <a class="dashingAutolink" name="autolink-169"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/input_line_number"></a><code>input_line_number</code>
+              <a class="dashingAutolink" name="autolink-314"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/input_line_number"></a><code>input_line_number</code>
               <a href="#input_line_number" class="icon-link" aria-label="Link to this section: `input_line_number`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>Returns the line number of the input currently being filtered.</p>
           </section>
         </section>
         <section id="streaming">
-          <a class="dashingAutolink" name="autolink-287"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Streaming"></a><h2>Streaming <a href="#streaming" class="icon-link" aria-label="Link to this section: Streaming"><span class="bi bi-link-45deg" aria-hidden="true"></span></a></h2>
+          <a class="dashingAutolink" name="autolink-324"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Streaming"></a><h2>Streaming <a href="#streaming" class="icon-link" aria-label="Link to this section: Streaming"><span class="bi bi-link-45deg" aria-hidden="true"></span></a></h2>
           <p>With the <code>--stream</code> option jq can parse input texts in a streaming
 fashion, allowing jq programs to start processing large JSON texts
 immediately rather than after the parse completes.  If you have a
@@ -7195,7 +7195,7 @@ run with <code>--stream</code> and <code>--seq</code> may output additional form
 as <code>[&#34;error message&#34;]</code> when an input text fails to parse.</p>
           <section id="truncate_stream">
             <h3>
-              <a class="dashingAutolink" name="autolink-155"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/truncate_stream%28stream_expression%29"></a><code>truncate_stream(stream_expression)</code>
+              <a class="dashingAutolink" name="autolink-84"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/truncate_stream%28stream_expression%29"></a><code>truncate_stream(stream_expression)</code>
               <a href="#truncate_stream" class="icon-link" aria-label="Link to this section: `truncate_stream(stream_expression)`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>Consumes a number as input and truncates the corresponding
@@ -7230,7 +7230,7 @@ given streaming expression.</p>
           </section>
           <section id="fromstream">
             <h3>
-              <a class="dashingAutolink" name="autolink-156"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/fromstream%28stream_expression%29"></a><code>fromstream(stream_expression)</code>
+              <a class="dashingAutolink" name="autolink-85"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/fromstream%28stream_expression%29"></a><code>fromstream(stream_expression)</code>
               <a href="#fromstream" class="icon-link" aria-label="Link to this section: `fromstream(stream_expression)`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>Outputs values corresponding to the stream expression&#39;s
@@ -7260,7 +7260,7 @@ outputs.</p>
           </section>
           <section id="tostream">
             <h3>
-              <a class="dashingAutolink" name="autolink-157"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/tostream"></a><code>tostream</code>
+              <a class="dashingAutolink" name="autolink-86"></a><a class="dashAnchor" name="//apple_ref/cpp/Function/tostream"></a><code>tostream</code>
               <a href="#tostream" class="icon-link" aria-label="Link to this section: `tostream`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>The <code>tostream</code> builtin outputs the streamed form of its input.</p>
@@ -7289,7 +7289,7 @@ outputs.</p>
           </section>
         </section>
         <section id="assignment">
-          <a class="dashingAutolink" name="autolink-288"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Assignment"></a><h2>Assignment <a href="#assignment" class="icon-link" aria-label="Link to this section: Assignment"><span class="bi bi-link-45deg" aria-hidden="true"></span></a></h2>
+          <a class="dashingAutolink" name="autolink-325"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Assignment"></a><h2>Assignment <a href="#assignment" class="icon-link" aria-label="Link to this section: Assignment"><span class="bi bi-link-45deg" aria-hidden="true"></span></a></h2>
           <p>Assignment works a little differently in jq than in most
 programming languages. jq doesn&#39;t distinguish between references
 to and copies of something - two objects or arrays are either
@@ -7327,8 +7327,8 @@ not a valid or useful path expression in <code>.</code>); use <code>$var | .foo 
 <p>Note too that <code>.a,.b=0</code> does not set <code>.a</code> and <code>.b</code>, but
 <code>(.a,.b)=0</code> sets both.</p>
           <section id="update-assignment">
-            <a class="dashingAutolink" name="autolink-60"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Update-assignment%3A%20%7C%3D"></a><h3>
-              Update-assignment: <a class="dashingAutolink" name="autolink-64"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%7C%3D"></a><code>|=</code>
+            <a class="dashingAutolink" name="autolink-289"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Update-assignment%3A%20%7C%3D"></a><h3>
+              Update-assignment: <a class="dashingAutolink" name="autolink-332"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%7C%3D"></a><code>|=</code>
               <a href="#update-assignment" class="icon-link" aria-label="Link to this section: Update-assignment: `|=`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>This is the &#34;update&#34; operator <code>|=</code>.  It takes a filter on the
@@ -7371,8 +7371,8 @@ releases, it used to be that only the last one was used).</p>
             </div>
           </section>
           <section id="arithmetic-update-assignment">
-            <a class="dashingAutolink" name="autolink-61"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Arithmetic%20update-assignment%3A%20%2B%3D%2C%20-%3D%2C%20%2A%3D%2C%20%2F%3D%2C%20%25%3D%2C%20%2F%2F%3D"></a><h3>
-              Arithmetic update-assignment: <a class="dashingAutolink" name="autolink-65"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%2B%3D"></a><code>+=</code>, <a class="dashingAutolink" name="autolink-66"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/-%3D"></a><code>-=</code>, <a class="dashingAutolink" name="autolink-67"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%2A%3D"></a><code>*=</code>, <a class="dashingAutolink" name="autolink-68"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%2F%3D"></a><code>/=</code>, <a class="dashingAutolink" name="autolink-69"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%25%3D"></a><code>%=</code>, <a class="dashingAutolink" name="autolink-70"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%2F%2F%3D"></a><code>//=</code>
+            <a class="dashingAutolink" name="autolink-290"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Arithmetic%20update-assignment%3A%20%2B%3D%2C%20-%3D%2C%20%2A%3D%2C%20%2F%3D%2C%20%25%3D%2C%20%2F%2F%3D"></a><h3>
+              Arithmetic update-assignment: <a class="dashingAutolink" name="autolink-333"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%2B%3D"></a><code>+=</code>, <a class="dashingAutolink" name="autolink-334"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/-%3D"></a><code>-=</code>, <a class="dashingAutolink" name="autolink-335"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%2A%3D"></a><code>*=</code>, <a class="dashingAutolink" name="autolink-336"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%2F%3D"></a><code>/=</code>, <a class="dashingAutolink" name="autolink-337"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%25%3D"></a><code>%=</code>, <a class="dashingAutolink" name="autolink-338"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%2F%2F%3D"></a><code>//=</code>
               <a href="#arithmetic-update-assignment" class="icon-link" aria-label="Link to this section: Arithmetic update-assignment: `+=`, `-=`, `*=`, `/=`, `%=`, `//=`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>jq has a few operators of the form <code>a op= b</code>, which are all
@@ -7402,8 +7402,8 @@ increment values, being the same as <code>|= . + 1</code>.</p>
             </div>
           </section>
           <section id="plain-assignment">
-            <a class="dashingAutolink" name="autolink-62"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Plain%20assignment%3A%20%3D"></a><h3>
-              Plain assignment: <a class="dashingAutolink" name="autolink-71"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%3D"></a><code>=</code>
+            <a class="dashingAutolink" name="autolink-291"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Plain%20assignment%3A%20%3D"></a><h3>
+              Plain assignment: <a class="dashingAutolink" name="autolink-339"></a><a class="dashAnchor" name="//apple_ref/cpp/Expression/%3D"></a><code>=</code>
               <a href="#plain-assignment" class="icon-link" aria-label="Link to this section: Plain assignment: `=`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>This is the plain assignment operator.  Unlike the others, the
@@ -7514,7 +7514,7 @@ field&#39;s <code>b</code> field, producing <code>{&#34;a&#34;: 10, &#34;b&#34;:
             </div>
           </section>
           <section id="complex-assignments">
-            <a class="dashingAutolink" name="autolink-63"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Complex%20assignments"></a><h3>
+            <a class="dashingAutolink" name="autolink-292"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Complex%20assignments"></a><h3>
               Complex assignments
               <a href="#complex-assignments" class="icon-link" aria-label="Link to this section: Complex assignments"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
@@ -7552,14 +7552,69 @@ that we did before:</p>
 </code></pre>
           </section>
         </section>
+        <section id="comments">
+          <a class="dashingAutolink" name="autolink-326"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Comments"></a><h2>Comments <a href="#comments" class="icon-link" aria-label="Link to this section: Comments"><span class="bi bi-link-45deg" aria-hidden="true"></span></a></h2>
+          <p>You can write comments in your jq filters using <code>#</code>.</p>
+<p>A <code>#</code> character (not part of a string) starts a comment.
+All characters from <code>#</code> to the end of the line are ignored.</p>
+<p>If the end of the line is preceded by an odd number of backslash
+characters, the following line is also considered part of the
+comment and is ignored.</p>
+<p>For example, the following code outputs <code>[1,3,4,7]</code></p>
+<pre><code>[
+  1,
+  # foo \
+  2,
+  # bar \\
+  3,
+  4, # baz \\\
+  5, \
+  6,
+  7
+  # comment \
+    comment \
+    comment
+]
+</code></pre>
+<p>Backslash continuing the comment on the next line can be useful
+when writing the &#34;shebang&#34; for a jq script:</p>
+<pre><code>#!/bin/sh --
+# sum - Output the sum of the given arguments (or stdin)
+# usage: sum [numbers...]
+# \
+exec jq --args -MRnf &#34;$0&#34; -- &#34;$@&#34;
+
+$ARGS.positional |
+reduce (
+  if . == []
+    then inputs
+    else .[]
+  end |
+  . as $dot |
+  try tonumber catch false |
+  if not or isnan then
+    @json &#34;sum: Invalid number \($dot).\n&#34; | halt_error(1)
+  end
+) as $n (0; . + $n)
+</code></pre>
+<p>The <code>exec</code> line is considered a comment by jq, so it is ignored.
+But it is not ignored by <code>sh</code>, since in <code>sh</code> a backslash at the
+end of the line does not continue the comment.
+With this trick, when the script is invoked as <code>sum 1 2</code>,
+<code>/bin/sh -- /path/to/sum 1 2</code> will be run, and <code>sh</code> will then
+run <code>exec jq --args -MRnf /path/to/sum -- 1 2</code> replacing itself
+with a <code>jq</code> interpreter invoked with the specified options (<code>-M</code>,
+<code>-R</code>, <code>-n</code>, <code>--args</code>), that evaluates the current file (<code>$0</code>),
+with the arguments (<code>$@</code>) that were passed to <code>sh</code>.</p>
+        </section>
         <section id="modules">
-          <a class="dashingAutolink" name="autolink-289"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Modules"></a><h2>Modules <a href="#modules" class="icon-link" aria-label="Link to this section: Modules"><span class="bi bi-link-45deg" aria-hidden="true"></span></a></h2>
+          <a class="dashingAutolink" name="autolink-327"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Modules"></a><h2>Modules <a href="#modules" class="icon-link" aria-label="Link to this section: Modules"><span class="bi bi-link-45deg" aria-hidden="true"></span></a></h2>
           <p>jq has a library/module system.  Modules are files whose names end
 in <code>.jq</code>.</p>
 <p>Modules imported by a program are searched for in a default search
 path (see below).  The <code>import</code> and <code>include</code> directives allow the
 importer to alter this path.</p>
-<p>Paths in the a search path are subject to various substitutions.</p>
+<p>Paths in the search path are subject to various substitutions.</p>
 <p>For paths starting with <code>~/</code>, the user&#39;s home directory is
 substituted for <code>~</code>.</p>
 <p>For paths starting with <code>$ORIGIN/</code>, the directory where the jq
@@ -7586,7 +7641,7 @@ ambiguities (e.g., <code>foo/foo</code>).</p>
 <p>If <code>$HOME/.jq</code> is a file, it is sourced into the main program.</p>
           <section id="import-relativepathstring-as-name">
             <h3>
-              <a class="dashingAutolink" name="autolink-158"></a><a class="dashAnchor" name="//apple_ref/cpp/Directive/import%20RelativePathString%20as%20NAME%20%5B%3Cmetadata%3E%5D%3B"></a><code>import RelativePathString as NAME [&lt;metadata&gt;];</code>
+              <a class="dashingAutolink" name="autolink-0"></a><a class="dashAnchor" name="//apple_ref/cpp/Directive/import%20RelativePathString%20as%20NAME%20%5B%3Cmetadata%3E%5D%3B"></a><code>import RelativePathString as NAME [&lt;metadata&gt;];</code>
               <a href="#import-relativepathstring-as-name" class="icon-link" aria-label="Link to this section: `import RelativePathString as NAME [&lt;metadata&gt;];`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>Imports a module found at the given path relative to a
@@ -7604,7 +7659,7 @@ path to be prefixed to the top-level search path.</p>
           </section>
           <section id="include-relativepathstring">
             <h3>
-              <a class="dashingAutolink" name="autolink-159"></a><a class="dashAnchor" name="//apple_ref/cpp/Directive/include%20RelativePathString%20%5B%3Cmetadata%3E%5D%3B"></a><code>include RelativePathString [&lt;metadata&gt;];</code>
+              <a class="dashingAutolink" name="autolink-1"></a><a class="dashAnchor" name="//apple_ref/cpp/Directive/include%20RelativePathString%20%5B%3Cmetadata%3E%5D%3B"></a><code>include RelativePathString [&lt;metadata&gt;];</code>
               <a href="#include-relativepathstring" class="icon-link" aria-label="Link to this section: `include RelativePathString [&lt;metadata&gt;];`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>Imports a module found at the given path relative to a
@@ -7620,7 +7675,7 @@ The metadata is also made available to users via the
           </section>
           <section id="import-relativepathstring-as-$name">
             <h3>
-              <a class="dashingAutolink" name="autolink-160"></a><a class="dashAnchor" name="//apple_ref/cpp/Directive/import%20RelativePathString%20as%20%24NAME%20%5B%3Cmetadata%3E%5D%3B"></a><code>import RelativePathString as $NAME [&lt;metadata&gt;];</code>
+              <a class="dashingAutolink" name="autolink-2"></a><a class="dashAnchor" name="//apple_ref/cpp/Directive/import%20RelativePathString%20as%20%24NAME%20%5B%3Cmetadata%3E%5D%3B"></a><code>import RelativePathString as $NAME [&lt;metadata&gt;];</code>
               <a href="#import-relativepathstring-as-$name" class="icon-link" aria-label="Link to this section: `import RelativePathString as $NAME [&lt;metadata&gt;];`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>Imports a JSON file found at the given path relative to a
@@ -7638,7 +7693,7 @@ path to be prefixed to the top-level search path.</p>
           </section>
           <section id="module-&lt;metadata&gt;">
             <h3>
-              <a class="dashingAutolink" name="autolink-161"></a><a class="dashAnchor" name="//apple_ref/cpp/Directive/module%20%3Cmetadata%3E%3B"></a><code>module &lt;metadata&gt;;</code>
+              <a class="dashingAutolink" name="autolink-3"></a><a class="dashAnchor" name="//apple_ref/cpp/Directive/module%20%3Cmetadata%3E%3B"></a><code>module &lt;metadata&gt;;</code>
               <a href="#module-&lt;metadata&gt;" class="icon-link" aria-label="Link to this section: `module &lt;metadata&gt;;`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>This directive is entirely optional.  It&#39;s not required for
@@ -7651,7 +7706,7 @@ use this metadata, but it is made available to users via the
           </section>
           <section id="modulemeta">
             <h3>
-              <a class="dashingAutolink" name="autolink-162"></a><a class="dashAnchor" name="//apple_ref/cpp/Directive/modulemeta"></a><code>modulemeta</code>
+              <a class="dashingAutolink" name="autolink-4"></a><a class="dashAnchor" name="//apple_ref/cpp/Directive/modulemeta"></a><code>modulemeta</code>
               <a href="#modulemeta" class="icon-link" aria-label="Link to this section: `modulemeta`"><span class="bi bi-link-45deg" aria-hidden="true"></span></a>
             </h3>
             <p>Takes a module name as input and outputs the module&#39;s metadata
@@ -7664,7 +7719,7 @@ install missing dependencies.</p>
           </section>
         </section>
         <section id="colors">
-          <a class="dashingAutolink" name="autolink-290"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Colors"></a><h2>Colors <a href="#colors" class="icon-link" aria-label="Link to this section: Colors"><span class="bi bi-link-45deg" aria-hidden="true"></span></a></h2>
+          <a class="dashingAutolink" name="autolink-328"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Colors"></a><h2>Colors <a href="#colors" class="icon-link" aria-label="Link to this section: Colors"><span class="bi bi-link-45deg" aria-hidden="true"></span></a></h2>
           <p>To configure alternative colors just set the <code>JQ_COLORS</code>
 environment variable to colon-delimited list of partial terminal
 escape sequences like <code>&#34;1;31&#34;</code>, in this order:</p>
