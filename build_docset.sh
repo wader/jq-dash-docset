@@ -4,7 +4,7 @@ DIR="$(pwd)"
 rm -rf "$DIR/contrib"
 mkdir "$DIR/contrib"
 
-git clone https://github.com/stedolan/jq /tmp/jq-src
+git clone https://github.com/jqlang/jq /tmp/jq-src
 cp -a jq-docs-root/* /tmp/jq-src/docs
 cd /tmp/jq-src/docs
 
